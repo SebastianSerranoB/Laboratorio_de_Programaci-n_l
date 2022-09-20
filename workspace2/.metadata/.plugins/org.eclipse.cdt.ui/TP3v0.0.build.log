@@ -1,0 +1,9 @@
+12:13:51 **** Incremental Build of configuration Debug for project TP3v0.0 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o funcionesAlumno.o "..\\funcionesAlumno.c" 
+gcc "-LC:\\Users\\admin\\workspace2\\TP3v0.0" -o TP3v0.0.exe Controller.o Passenger.o funcionesAlumno.o main.o parser.o -lLinkedList 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file TP3v0.0.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+
+12:13:52 Build Failed. 1 errors, 0 warnings. (took 785ms)
+

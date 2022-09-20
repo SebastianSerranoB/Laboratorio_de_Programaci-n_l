@@ -1,0 +1,8 @@
+16:26:45 **** Rebuild of configuration Debug for project repasoABM ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\abm.o" "..\\src\\abm.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\repasoABM.o" "..\\src\\repasoABM.c" 
+gcc -o repasoABM.exe "src\\abm.o" "src\\repasoABM.o" 
+
+16:26:45 Build Finished. 0 errors, 0 warnings. (took 782ms)
+

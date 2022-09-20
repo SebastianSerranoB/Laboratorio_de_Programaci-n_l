@@ -1,0 +1,12 @@
+16:26:23 **** Rebuild of configuration Debug for project ejercicio7-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ejercicio7-1.o" "..\\src\\ejercicio7-1.c" 
+..\src\ejercicio7-1.c: In function 'main':
+..\src\ejercicio7-1.c:83:12: warning: unused variable 'producto' [-Wunused-variable]
+  sProducto producto;              //declaro una variable de tipo struct-iProducto con nombre producto;
+            ^~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones7.o" "..\\src\\funciones7.c" 
+gcc -o ejercicio7-1.exe "src\\ejercicio7-1.o" "src\\funciones7.o" 
+
+16:26:23 Build Finished. 0 errors, 1 warnings. (took 763ms)
+

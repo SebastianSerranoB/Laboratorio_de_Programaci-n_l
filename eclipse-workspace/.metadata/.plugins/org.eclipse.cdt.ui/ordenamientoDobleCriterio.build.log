@@ -1,0 +1,9 @@
+16:26:33 **** Rebuild of configuration Debug for project ordenamientoDobleCriterio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ordenamientoDobleCriterio.o" "..\\src\\ordenamientoDobleCriterio.c" 
+..\src\ordenamientoDobleCriterio.c:10:31: error: unknown type name 'eTicket'
+     void ordenarDobleCriterio(eTicket listaTickets[],int tam)
+                               ^~~~~~~
+
+16:26:33 Build Failed. 1 errors, 0 warnings. (took 185ms)
+

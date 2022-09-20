@@ -1,0 +1,13 @@
+16:26:37 **** Rebuild of configuration Debug for project pruebas ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pruebas.o" "..\\src\\pruebas.c" 
+..\src\pruebas.c: In function 'main':
+..\src\pruebas.c:101:542: error: expected ',' or ';' before ')' token
+  char string[] = "\n1- Todas las discográficas\t\t2- Todos los tipos de artistas musicales\n3- Todos los artistas\t\t4- Todos los álbumes\n5- Realizar un solo listado de los álbumes ordenados por los siguientes criterios: -Importe(descendentemente) o Título (ascendentemente)\n6- Todos los álbumes cuya fecha de publicación es posterior a 31/12/1999\n7- Todos los álbumes que no superan el promedio de los importes\t\t8- Todos los álbumes de un artista determinado\n9- Todos los álbumes de cada año\t\t10- El álbum o los álbumes más baratos");
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^
+..\src\pruebas.c:101:7: warning: unused variable 'string' [-Wunused-variable]
+  char string[] = "\n1- Todas las discográficas\t\t2- Todos los tipos de artistas musicales\n3- Todos los artistas\t\t4- Todos los álbumes\n5- Realizar un solo listado de los álbumes ordenados por los siguientes criterios: -Importe(descendentemente) o Título (ascendentemente)\n6- Todos los álbumes cuya fecha de publicación es posterior a 31/12/1999\n7- Todos los álbumes que no superan el promedio de los importes\t\t8- Todos los álbumes de un artista determinado\n9- Todos los álbumes de cada año\t\t10- El álbum o los álbumes más baratos");
+       ^~~~~~
+
+16:26:37 Build Failed. 1 errors, 1 warnings. (took 237ms)
+

@@ -1,0 +1,32 @@
+16:26:01 **** Rebuild of configuration Debug for project clasede20abrilEstructuras ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\clasede20abrilEstructuras.o" "..\\src\\clasede20abrilEstructuras.c" 
+..\src\clasede20abrilEstructuras.c: In function 'main':
+..\src\clasede20abrilEstructuras.c:60:5: error: expected ';' before '}' token
+     }
+     ^
+..\src\clasede20abrilEstructuras.c:113:19: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+           scanf("%d", tickets[i].codigo);
+                   ^
+..\src\clasede20abrilEstructuras.c:127:19: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+           scanf("%d", tickets[i].horarioSalida);
+                   ^
+..\src\clasede20abrilEstructuras.c:131:19: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+           scanf("%d", tickets[i].horarioLlegada);
+                   ^
+..\src\clasede20abrilEstructuras.c:35:7: warning: unused variable 'opciones' [-Wunused-variable]
+  char opciones[1024], confirmar;
+       ^~~~~~~~
+..\src\clasede20abrilEstructuras.c: In function 'alta':
+..\src\clasede20abrilEstructuras.c:175:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+  scanf("%d", ticket.codigo);
+          ^
+..\src\clasede20abrilEstructuras.c:186:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+  scanf("%d", ticket.horarioSalida);
+          ^
+..\src\clasede20abrilEstructuras.c:189:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+  scanf("%d", ticket.horarioLlegada);
+          ^
+
+16:26:01 Build Failed. 1 errors, 7 warnings. (took 176ms)
+

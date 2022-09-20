@@ -1,0 +1,11 @@
+16:26:43 **** Rebuild of configuration Debug for project repaso2-2fin ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\repaso2-2fin.o" "..\\src\\repaso2-2fin.c" 
+..\src\repaso2-2fin.c: In function 'sumarNegativos':
+..\src\repaso2-2fin.c:128:4: warning: 'menorNegativo' is used uninitialized in this function [-Wuninitialized]
+  if(a < menorNegativo || banderaMenorNegativos == 0) // como evito este tipo de warnings(en el tp no tiene que haber), no deberia inicializar minimos ni maximos
+    ^
+gcc -o repaso2-2fin.exe "src\\repaso2-2fin.o" 
+
+16:26:44 Build Finished. 0 errors, 1 warnings. (took 559ms)
+

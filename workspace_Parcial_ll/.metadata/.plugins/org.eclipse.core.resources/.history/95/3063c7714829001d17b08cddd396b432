@@ -1,0 +1,378 @@
+/*
+ * Pokemon.c
+ *
+ *  Created on: 31 ago 2022
+ *      Author: admin
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+
+#include "LinkedList.h"
+#include "Pokemon.h"
+#include "controller.h"
+#include "alumno.h"
+#include "parser.h"
+
+
+//============ CONSTRUCTOR ============//
+
+ePokemon* Pokemon_new()
+{
+	ePokemon* newPokemon = NULL;
+
+	newPokemon = (ePokemon*)malloc(sizeof(ePokemon)*1);
+
+	if(newPokemon != NULL)
+	{
+		newPokemon->numero = -1;
+		newPokemon->valorAtaque = -1;
+		newPokemon->esVarioColor = -1;
+		strcpy(newPokemon->nombre,"");
+		strcpy(newPokemon->tipo,"");
+		strcpy(newPokemon->tamanio,"");
+		strcpy(newPokemon->ataqueCargado,"");
+	}
+
+	return newPokemon;
+}
+
+ePokemon* Pokemon_newParametros(char* numero, char* nombre, char* tipo, char* tamanio, char* ataqueCargado, char* valorAtaque, char* esVarioColor)
+{
+	ePokemon* newPokemon = NULL;
+	newPokemon = Pokemon_new();
+
+	if(numero != NULL && nombre != NULL && tipo != NULL && tamanio != NULL && ataqueCargado != NULL && valorAtaque != NULL && esVarioColor != NULL)
+	{
+		//transformar tipo de dato si es necesario(conversor)
+		//set en elemento
+		//corresponde una validacion para cada atributo, ya que es recibido como texto
+		/*Participante_setId(newParticipante, atoi(id));
+		Participante_setEdad(newParticipante, atoi(edad));
+		Participante_setNombre(newParticipante, nombre);
+		Participante_setIdDificultad(newParticipante, atoi(idDificultad));
+		Participante_setScore(newParticipante, atoi(score));*/
+		Pokemon_setEsVarioColor(newPokemon, atoi(esVarioColor));
+		Pokemon_setNumero(newPokemon, atoi(numero));
+		Pokemon_setValorAtaque(newPokemon, atoi(valorAtaque));
+		Pokemon_setAtaqueCargado(newPokemon, ataqueCargado);
+		Pokemon_setTamanio(newPokemon, tamanio);
+		Pokemon_setTipo(newPokemon, tipo);
+		Pokemon_setNombre(newPokemon, nombre);
+
+	}
+	else
+	{
+		Pokemon_delete(newPokemon);
+		newPokemon = NULL;
+	}
+
+	return newPokemon;
+}
+
+
+//============ DESTRUCTOR ============//
+
+int Pokemon_delete(ePokemon* this)
+{
+	int retorno;
+	retorno = -1;
+
+	if(this != NULL)
+	{
+		retorno = 0;
+		free(this);
+	}
+
+
+	return retorno;
+}
+
+//============ SETTERS ===============//
+int Pokemon_setNumero(ePokemon* this, int numero){
+
+	int retorno = -1;
+	if(this != NULL && numero >= 0)
+	{
+		this->numero = numero;
+		retorno = 0;
+	}
+
+	return retorno;
+}
+
+int Pokemon_setNombre(ePokemon* this, char* nombre){
+	int retorno = -1;
+
+	if(this != NULL && nombre != NULL)
+	{
+		strcpy(this->nombre, nombre);
+		retorno = 0;
+	}
+	return retorno;
+}
+
+int Pokemon_setTipo(ePokemon* this, char* tipo){
+
+	int retorno = -1;
+
+		if(this != NULL && tipo != NULL)
+		{
+			strcpy(this->tipo, tipo);
+			retorno = 0;
+		}
+		return retorno;
+}
+int Pokemon_setTamanio(ePokemon* this, char* tamanio){
+
+	int retorno = -1;
+
+		if(this != NULL && tamanio != NULL)
+		{
+			strcpy(this->tamanio, tamanio);
+			retorno = 0;
+		}
+		return retorno;
+
+}
+int Pokemon_setAtaqueCargado(ePokemon* this, char* ataqueCargado){
+	int retorno = -1;
+
+		if(this != NULL && ataqueCargado != NULL)
+		{
+			strcpy(this->ataqueCargado, ataqueCargado);
+			retorno = 0;
+		}
+		return retorno;
+}
+
+int Pokemon_setValorAtaque(ePokemon* this, int valorAtaque){
+
+	int retorno = -1;
+		if(this != NULL && valorAtaque >= 0)
+		{
+			this->valorAtaque = valorAtaque;
+			retorno = 0;
+		}
+
+		return retorno;
+
+}
+int Pokemon_setEsVarioColor(ePokemon* this, int esVarioColor){
+	int retorno = -1;
+		if(this != NULL && esVarioColor >= 0)
+		{
+			this->esVarioColor = esVarioColor;
+			retorno = 0;
+		}
+
+		return retorno;
+}
+
+//============ GETTERS ===============//
+
+int Pokemon_getNumero(ePokemon* this, int* numero){
+
+	int retorno = -1;
+	if(this != NULL && numero != NULL)
+	{
+		*numero = this->numero;
+		retorno = 0;
+	}
+
+	return retorno;
+}
+
+int Pokemon_getNombre(ePokemon* this, char* nombre){
+	int retorno = -1;
+
+	if(this != NULL && nombre != NULL)
+	{
+		strcpy(nombre, this->nombre);
+		retorno = 0;
+	}
+	return retorno;
+}
+
+int Pokemon_getTipo(ePokemon* this, char* tipo){
+
+	int retorno = -1;
+
+		if(this != NULL && tipo != NULL)
+		{
+			strcpy(tipo, this->tipo);
+			retorno = 0;
+		}
+		return retorno;
+}
+int Pokemon_getTamanio(ePokemon* this, char* tamanio){
+
+	int retorno = -1;
+
+		if(this != NULL && tamanio != NULL)
+		{
+			strcpy(tamanio, this->tamanio);
+			retorno = 0;
+		}
+		return retorno;
+}
+int Pokemon_getAtaqueCargado(ePokemon* this, char* ataqueCargado){
+
+	int retorno = -1;
+
+		if(this != NULL && ataqueCargado != NULL)
+		{
+			strcpy(ataqueCargado, this->ataqueCargado);
+			retorno = 0;
+		}
+		return retorno;
+}
+int Pokemon_getValorAtaque(ePokemon* this, int* valorAtaque){
+
+	int retorno = -1;
+		if(this != NULL && valorAtaque != NULL)
+		{
+			*valorAtaque = this->valorAtaque;
+			retorno = 0;
+		}
+
+		return retorno;
+
+}
+
+int Pokemon_getEsVarioColor(ePokemon* this, int* esVarioColor){
+	int retorno = -1;
+		if(this != NULL && esVarioColor != NULL)
+		{
+			*esVarioColor = this->esVarioColor;
+			retorno = 0;
+		}
+
+		return retorno;
+}
+
+int Pokemon_getEsVarioColorTxt(ePokemon* this, int esVarioColor, char esVarioColorTxt[]){
+
+	int retorno = -1;
+	if(this != NULL && esVarioColorTxt != NULL)
+	{
+		retorno = 0;
+		if(esVarioColor == 1)
+		{
+			strcpy(esVarioColorTxt, "VARIOCOLOR");
+		}
+		else
+		{
+			strcpy(esVarioColorTxt, "SIMPLE");
+
+		}
+
+	}
+
+	return retorno;
+}
+
+//============ PRINT UN_ELEMENTO =============//
+
+int printOneElement(ePokemon* this)
+{
+	int numero;
+	int valorAtaque;
+	int esVarioColor;
+	char esVarioColorTxt[50];
+	char nombre[100];
+	char tipo[100];
+	char tamanio[100];
+	char ataqueCargado[100];
+	int rtn;
+	rtn = -1;
+
+	if(this != NULL)
+	{
+		Pokemon_getNumero(this, &numero);
+		Pokemon_getValorAtaque(this, &valorAtaque);
+		Pokemon_getEsVarioColor(this, &esVarioColor);
+		Pokemon_getEsVarioColorTxt(this, esVarioColor, esVarioColorTxt);
+		Pokemon_getNombre(this, nombre);
+		Pokemon_getTamanio(this, tamanio);
+		Pokemon_getTipo(this, tipo);
+		Pokemon_getAtaqueCargado(this, ataqueCargado);
+
+		printf("\n %5d\t %15s\t %10s\t %5s\t\t  %15s \t  %5d \t    %10s", numero, nombre, tipo, tamanio, ataqueCargado, valorAtaque, esVarioColorTxt);
+			rtn = 0;
+			//numero nombre tipo tamanio ataquecargado valorataque esvariocolor
+	}
+
+	return rtn;
+}
+
+
+//============ PRINT LISTA_ELEMENTOS ==============//
+
+int printList(LinkedList* this)
+{
+	ePokemon* pokemonAux;
+	int i;
+	int limite;
+	int rtn;
+	rtn = -1;
+
+	if(this != NULL)
+	{
+		limite = ll_len(this);
+		if(limite > 0)
+		{
+			printf("\n====================================================================  LISTA  ====================================================================\n");
+			printf("\n  NUMERO\t   NOMBRE\t     TIPO\t   TAMANIO\t   ATAQUE CARGADO\t  VALOR ATAQUE     VARIOCOLOR");
+			printf("\n================================================================================================================================================================\n");
+			for(i=0;i<limite;i++)
+			{
+				pokemonAux = (ePokemon*)ll_get(this, i);
+
+				if(pokemonAux != NULL)
+				{
+					printOneElement(pokemonAux);
+					rtn = 0;
+				}
+			}
+			printf("\n================================================================================================================================================================\n");
+
+		}
+		else
+		{
+			printf("\nNo existen elementos en lista.");
+		}
+	}
+
+
+	return rtn;
+}
+
+//============= FUNCIONES FILTER  ========================//
+int Pokemon_filtrarPokemonAguaVarioColor(void* elemento)
+{
+	int retorno;
+	ePokemon* pokemonAux = NULL;
+	int esVarioColor;
+	char tipo[100];
+	retorno = -1;
+
+
+	if(elemento != NULL)
+	{
+		pokemonAux = (pokemonAux*) elemento;
+		Participante_getIdDificultad(participanteAux, &idDificultad);
+
+
+		if(idDificultad == 3)
+		{
+			retorno = 0;
+		}
+	}
+
+	return retorno;
+}
+
+

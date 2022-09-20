@@ -1,0 +1,12 @@
+16:26:28 **** Rebuild of configuration Debug for project linkedListClase ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\linkedListClase.o" "..\\src\\linkedListClase.c" 
+..\src\linkedListClase.c: In function 'main':
+..\src\linkedListClase.c:25:14: warning: variable 'arrayAux' set but not used [-Wunused-but-set-variable]
+     Persona* arrayAux;
+              ^~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Persona.o" "..\\src\\Persona.c" 
+gcc -o linkedListClase.exe "src\\Persona.o" "src\\linkedListClase.o" 
+
+16:26:29 Build Finished. 0 errors, 1 warnings. (took 818ms)
+

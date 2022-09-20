@@ -1,0 +1,98 @@
+/*
+ ============================================================================
+ Name        : ll_map(2-formas).c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+int main(void) {
+	setbuf(stdout, NULL);
+
+
+
+
+
+
+
+
+
+	return EXIT_SUCCESS;
+}
+
+LinkedList* ll_map(LinkedList* this, int (*pFunc)(void*))
+{
+		LinkedList* listaMapeada = NULL;
+		void* pElement = NULL;
+		int i;
+
+	//clonar original y retornar clon mapeado
+
+		if(this != NULL && pFunc != NULL)
+		{
+			listaMapeada = ll_clone(this);
+			if(listaMapeada != NULL)
+			{
+				for(i=0;i<ll_len(this);i++)
+				{
+					pElement = (void*)ll_get(listaMapeada,i);
+
+					if(pFunc(pElement) == 0)
+					{
+						ll_set(listaMapeada, i, pElement);
+						// no deberia agregar el elemento en la misma posicion que obtuvimos con get?,(con ll_set)
+						//porque con ll_add() estamos agregando al final del mapeo, nosotros buscamos tocar y reemplazar cierto valor de los elementos existentes, no crear nuevos
+					}
+				}
+			}
+
+		}
+
+
+		return listaMapeada;
+}
+//Con esta forma recibimos la lista original y la clonamos dentro de la funcion map, esta lista clonada sera mapeada y retornada sin modificar la oiriginal
+
+int ll_map(LinkedList* this, int (*pFunc)(void*))
+{
+	int rtn;
+	void* pElement = NULL;
+	int i;
+	rtn = -1;
+
+
+
+		if(this != NULL && pFunc != NULL)
+		{
+
+			for(i=0;i<ll_len(this);i++)
+			 {
+				pElement = (void*)ll_get(this,i);
+
+				if(pFunc(pElement) == 0)
+				{
+					rtn = 0;
+				}
+			}
+
+		}
+
+
+		return rtn;
+}
+
+//con esta forma modificamos/mapeamos directamente la lista que recibimos y retornamos un integer a modo de validacion/confirmacion
+
+//Esencialmente son dos formas distintas de hacer lo mismo, la diferencia radica en el return y en que momento se clona(si es que se clona) la lista a mapear, es decir, en el segundo ejemplo, podriamos clonar la
+//lista original previo al llamado de la funcion map() y pasarle como parametro una lista ya clonada, siendo esta la que se modifica, o podriamos modificar directamente la lista original,
+//conclusion: creo que me inclino mas por la segunda forma(modificar directamente) ya que queda a mi juicio si generar un clon o no, de la lista, dandome flexibilidad para clonarla previo al llamdo de la funcion si deseo;
+// LinkedList* listaMapeada = NULL;     listaMapeada =  ll_clone(original);
+
+

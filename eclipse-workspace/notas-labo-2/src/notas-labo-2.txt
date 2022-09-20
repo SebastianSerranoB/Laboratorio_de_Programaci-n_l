@@ -1,0 +1,50 @@
+/*
+ ============================================================================
+ Name        : notas-labo-2.c
+
+ 
+ FUNCIONES
+ 
+ TRES PREGUNTAS
+ QUE HACE?
+ QUE RECIBE?
+ QUE RETORNA?
+ 
+ DECLARACION, PROTOTIPO O FIRMA (SIGNATURE) DE LA FUNCION
+ - Va antes del main
+ 
+ DEFINICION O CUERPO DE LA FUNCION
+ - Dentro del main
+ 
+ TRES INSTANCIAS
+ PROTOTIPO DE FUNCION
+ DEFINICION O CUERPO DE FUNCION
+ LLAMADA A LA FUNCION
+ 
+ 
+ #INCLUDE <stdlib.h>
+ #INCLUDE <stdio.h>
+ 
+ //Declaracion
+ int sumar(int,int); //(x,x) parametros o argumentos enviados, el "int"  antes de suma refiere al tipo de dato que retorna la funcion.
+ El prototipo esta ahi por un motivo, al declarar la funcion, el main (que esta abajo) puede reconocer la existencia de esta, para poder llamarla.
+ 
+ int main(void)
+ {
+ 	//llamada a la funcion 
+ 	sumar()
+ 
+ }
+ 
+ 
+ 
+ 
+ Para que sirven las funciones ? que ventajas o mejoras
+ variables locales globales
+ mascaras
+ etc, cosas que entran en el parcial de programacion teorico y bueno obviamente ne el otro tambien laboratorio
+ 
+ //cuerpo de la funcion, desarrollo de la funcion
+ int sumar(int,int)
+ {}
+ 

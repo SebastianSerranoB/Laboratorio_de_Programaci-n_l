@@ -1,0 +1,432 @@
+16:26:32 **** Rebuild of configuration Debug for project notasPARCIAL ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\notasPARCIAL.o" "..\\src\\notasPARCIAL.c" 
+..\src\notasPARCIAL.c:88:2: error: expected specifier-qualifier-list before '...' token
+  ...
+  ^~~
+..\src\notasPARCIAL.c:100:2: error: conflicting types for 'eEmpleado'
+ }eEmpleado;
+  ^~~~~~~~~
+..\src\notasPARCIAL.c:47:2: note: previous declaration of 'eEmpleado' was here
+ }eEmpleado;
+  ^~~~~~~~~
+..\src\notasPARCIAL.c:110:21: error: unknown type name 'eEmpelado'
+ void cargarEmpleado(eEmpelado lista[],  int tamanio); //prototipo
+                     ^~~~~~~~~
+..\src\notasPARCIAL.c:112:1: warning: data definition has no type or storage class
+ cargarEmpleado(lista,  T); // llamada
+ ^~~~~~~~~~~~~~
+..\src\notasPARCIAL.c:112:1: warning: type defaults to 'int' in declaration of 'cargarEmpleado' [-Wimplicit-int]
+..\src\notasPARCIAL.c:112:1: warning: parameter names (without types) in function declaration
+..\src\notasPARCIAL.c:115:21: error: unknown type name 'eEmpelado'
+ void cargarEmpleado(eEmpelado lista[],  int tamanio){
+                     ^~~~~~~~~
+..\src\notasPARCIAL.c:122:9: error: redefinition of 'sectores'
+ eSector sectores[3] = { 1,"Contabilidad", 2,"Sistemas", 3, "RRHH" };
+         ^~~~~~~~
+..\src\notasPARCIAL.c:121:9: note: previous definition of 'sectores' was here
+ eSector sectores[3] = { {1,"Contabilidad"}, {2,"Sistemas"}, {3, "RRHH"} };
+         ^~~~~~~~
+..\src\notasPARCIAL.c:122:23: warning: missing braces around initializer [-Wmissing-braces]
+ eSector sectores[3] = { 1,"Contabilidad", 2,"Sistemas", 3, "RRHH" };
+                       ^
+..\src\notasPARCIAL.c:122:23: note: (near initialization for 'sectores')
+..\src\notasPARCIAL.c:21:19: error: expected ')' before numeric constant
+ #define EMPLEADOS 100
+                   ^
+..\src\notasPARCIAL.c:128:29: note: in expansion of macro 'EMPLEADOS'
+ inicializarEmpleados(lista, EMPLEADOS); //llamada
+                             ^~~~~~~~~
+..\src\notasPARCIAL.c:21:19: error: expected ')' before numeric constant
+ #define EMPLEADOS 100
+                   ^
+..\src\notasPARCIAL.c:140:33: note: in expansion of macro 'EMPLEADOS'
+ hardcodearDatosEmpleados(lista, EMPLEADOS); //llamada
+                                 ^~~~~~~~~
+..\src\notasPARCIAL.c: In function 'hardcodearDatosEmpleados':
+..\src\notasPARCIAL.c:154:9: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
+         strcpy(lista[i].nombre, nombres[i]);
+         ^~~~~~
+..\src\notasPARCIAL.c:154:9: warning: incompatible implicit declaration of built-in function 'strcpy'
+..\src\notasPARCIAL.c:154:9: note: include '<string.h>' or provide a declaration of 'strcpy'
+..\src\notasPARCIAL.c:155:17: error: 'eEmpleado {aka struct <anonymous>}' has no member named 'sexo'
+         lista[i].sexo = sexo[i];
+                 ^
+..\src\notasPARCIAL.c:156:17: error: 'eEmpleado {aka struct <anonymous>}' has no member named 'sueldoBruto'
+         lista[i].sueldoBruto = sueldosBruto[i];
+                 ^
+..\src\notasPARCIAL.c:157:17: error: 'eEmpleado {aka struct <anonymous>}' has no member named 'sueldoNeto'
+         lista[i].sueldoNeto = sueldosBruto[i] * 0.85;
+                 ^
+..\src\notasPARCIAL.c: At top level:
+..\src\notasPARCIAL.c:180:1: warning: data definition has no type or storage class
+ indice = buscarLibre(lista, EMPLEADOS);
+ ^~~~~~
+..\src\notasPARCIAL.c:180:1: warning: type defaults to 'int' in declaration of 'indice' [-Wimplicit-int]
+..\src\notasPARCIAL.c:180:10: error: initializer element is not constant
+ indice = buscarLibre(lista, EMPLEADOS);
+          ^~~~~~~~~~~
+..\src\notasPARCIAL.c:182:1: error: expected identifier or '(' before 'if'
+ if( indice != -1 ){
+ ^~
+..\src\notasPARCIAL.c:185:1: error: expected identifier or '(' before 'else'
+ else{
+ ^~~~
+..\src\notasPARCIAL.c:190:0: warning: "EMPLEADOS" redefined
+ #define EMPLEADOS 6
+ 
+..\src\notasPARCIAL.c:21:0: note: this is the location of the previous definition
+ #define EMPLEADOS 100
+ 
+..\src\notasPARCIAL.c:192:1: error: unknown type name 'eSectores'
+ eSectores listaSectores[SECTORES];
+ ^~~~~~~~~
+..\src\notasPARCIAL.c:189:18: error: expected ')' before numeric constant
+ #define SECTORES 3
+                  ^
+..\src\notasPARCIAL.c:199:31: note: in expansion of macro 'SECTORES'
+ listarSectores(listaSectores, SECTORES);
+                               ^~~~~~~~
+..\src\notasPARCIAL.c:201:8: error: expected declaration specifiers or '...' before string constant
+ printf("Codigo de sector");
+        ^~~~~~~~~~~~~~~~~~
+..\src\notasPARCIAL.c:202:7: error: expected declaration specifiers or '...' before string constant
+ scanf("%d", &sectorAux);
+       ^~~~
+..\src\notasPARCIAL.c:202:13: error: expected declaration specifiers or '...' before '&' token
+ scanf("%d", &sectorAux);
+             ^
+..\src\notasPARCIAL.c:204:1: error: expected identifier or '(' before 'for'
+ for(i=0; i<SECTORES; i++){
+ ^~~
+..\src\notasPARCIAL.c:204:11: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
+ for(i=0; i<SECTORES; i++){
+           ^
+..\src\notasPARCIAL.c:204:23: error: expected '=', ',', ';', 'asm' or '__attribute__' before '++' token
+ for(i=0; i<SECTORES; i++){
+                       ^~
+..\src\notasPARCIAL.c:211:1: error: expected identifier or '(' before 'for'
+ for(i=0; i<EMPLEADOS; i++){
+ ^~~
+..\src\notasPARCIAL.c:211:11: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
+ for(i=0; i<EMPLEADOS; i++){
+           ^
+..\src\notasPARCIAL.c:211:24: error: expected '=', ',', ';', 'asm' or '__attribute__' before '++' token
+ for(i=0; i<EMPLEADOS; i++){
+                        ^~
+..\src\notasPARCIAL.c:189:18: error: expected ')' before numeric constant
+ #define SECTORES 3
+                  ^
+..\src\notasPARCIAL.c:220:31: note: in expansion of macro 'SECTORES'
+ listarSectores(listaSectores, SECTORES);
+                               ^~~~~~~~
+..\src\notasPARCIAL.c:222:8: error: expected declaration specifiers or '...' before string constant
+ printf("Codigo de sector");
+        ^~~~~~~~~~~~~~~~~~
+..\src\notasPARCIAL.c:223:7: error: expected declaration specifiers or '...' before string constant
+ scanf("%d", &sectorAux);
+       ^~~~
+..\src\notasPARCIAL.c:223:13: error: expected declaration specifiers or '...' before '&' token
+ scanf("%d", &sectorAux);
+             ^
+..\src\notasPARCIAL.c:225:1: error: expected identifier or '(' before 'for'
+ for(i=0; i<SECTORES; i++){
+ ^~~
+..\src\notasPARCIAL.c:225:11: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
+ for(i=0; i<SECTORES; i++){
+           ^
+..\src\notasPARCIAL.c:225:23: error: expected '=', ',', ';', 'asm' or '__attribute__' before '++' token
+ for(i=0; i<SECTORES; i++){
+                       ^~
+..\src\notasPARCIAL.c:240:0: warning: "EMPLEADOS" redefined
+ #define EMPLEADOS 100
+ 
+..\src\notasPARCIAL.c:190:0: note: this is the location of the previous definition
+ #define EMPLEADOS 6
+ 
+..\src\notasPARCIAL.c:246:2: error: conflicting types for 'eFecha'
+ }eFecha;
+  ^~~~~~
+..\src\notasPARCIAL.c:27:2: note: previous declaration of 'eFecha' was here
+ }eFecha;
+  ^~~~~~
+..\src\notasPARCIAL.c:251:2: error: conflicting types for 'eSector'
+ }eSector;
+  ^~~~~~~
+..\src\notasPARCIAL.c:32:2: note: previous declaration of 'eSector' was here
+ }eSector;
+  ^~~~~~~
+..\src\notasPARCIAL.c:266:2: error: conflicting types for 'eEmpleado'
+ }eEmpleado;
+  ^~~~~~~~~
+..\src\notasPARCIAL.c:100:2: note: previous declaration of 'eEmpleado' was here
+ }eEmpleado;
+  ^~~~~~~~~
+..\src\notasPARCIAL.c:307:2: error: expected specifier-qualifier-list before '...' token
+  ...
+  ^~~
+..\src\notasPARCIAL.c:309:2: error: conflicting types for 'ePuesto'
+ }ePuesto;
+  ^~~~~~~
+..\src\notasPARCIAL.c:90:2: note: previous declaration of 'ePuesto' was here
+ }ePuesto;
+  ^~~~~~~
+..\src\notasPARCIAL.c:319:2: error: conflicting types for 'eEmpleado'
+ }eEmpleado;
+  ^~~~~~~~~
+..\src\notasPARCIAL.c:266:2: note: previous declaration of 'eEmpleado' was here
+ }eEmpleado;
+  ^~~~~~~~~
+..\src\notasPARCIAL.c:326:11: error: conflicting types for 'lista'
+ eEmpleado lista[EMPLEADOS];
+           ^~~~~
+..\src\notasPARCIAL.c:107:11: note: previous declaration of 'lista' was here
+ eEmpleado lista[EMPLEADOS];
+           ^~~~~
+..\src\notasPARCIAL.c:327:9: error: conflicting types for 'sectores'
+ eSector sectores[3];
+         ^~~~~~~~
+..\src\notasPARCIAL.c:121:9: note: previous definition of 'sectores' was here
+ eSector sectores[3] = { {1,"Contabilidad"}, {2,"Sistemas"}, {3, "RRHH"} };
+         ^~~~~~~~
+..\src\notasPARCIAL.c:329:21: error: unknown type name 'eEmpelado'
+ void cargarEmpleado(eEmpelado lista[],  int tamanio); //prototipo
+                     ^~~~~~~~~
+..\src\notasPARCIAL.c:331:1: warning: data definition has no type or storage class
+ cargarEmpleado(lista,  T); // llamada
+ ^~~~~~~~~~~~~~
+..\src\notasPARCIAL.c:331:1: warning: type defaults to 'int' in declaration of 'cargarEmpleado' [-Wimplicit-int]
+..\src\notasPARCIAL.c:331:1: warning: parameter names (without types) in function declaration
+..\src\notasPARCIAL.c:334:21: error: unknown type name 'eEmpelado'
+ void cargarEmpleado(eEmpelado lista[],  int tamanio){
+                     ^~~~~~~~~
+..\src\notasPARCIAL.c:340:9: error: conflicting types for 'sectores'
+ eSector sectores[3] = { {1,"Contabilidad"}, {2,"Sistemas"}, {3, "RRHH"} };
+         ^~~~~~~~
+..\src\notasPARCIAL.c:121:9: note: previous definition of 'sectores' was here
+ eSector sectores[3] = { {1,"Contabilidad"}, {2,"Sistemas"}, {3, "RRHH"} };
+         ^~~~~~~~
+..\src\notasPARCIAL.c:341:9: error: conflicting types for 'sectores'
+ eSector sectores[3] = { 1,"Contabilidad", 2,"Sistemas", 3, "RRHH" };
+         ^~~~~~~~
+..\src\notasPARCIAL.c:121:9: note: previous definition of 'sectores' was here
+ eSector sectores[3] = { {1,"Contabilidad"}, {2,"Sistemas"}, {3, "RRHH"} };
+         ^~~~~~~~
+..\src\notasPARCIAL.c:341:23: warning: missing braces around initializer [-Wmissing-braces]
+ eSector sectores[3] = { 1,"Contabilidad", 2,"Sistemas", 3, "RRHH" };
+                       ^
+..\src\notasPARCIAL.c:341:23: note: (near initialization for 'sectores')
+..\src\notasPARCIAL.c:345:6: error: conflicting types for 'inicializarEmpleados'
+ void inicializarEmpleados(eEmpleado lista[], int tam);
+      ^~~~~~~~~~~~~~~~~~~~
+..\src\notasPARCIAL.c:130:6: note: previous definition of 'inicializarEmpleados' was here
+ void inicializarEmpleados(eEmpleado lista[], int tam){
+      ^~~~~~~~~~~~~~~~~~~~
+..\src\notasPARCIAL.c:240:19: error: expected ')' before numeric constant
+ #define EMPLEADOS 100
+                   ^
+..\src\notasPARCIAL.c:347:29: note: in expansion of macro 'EMPLEADOS'
+ inicializarEmpleados(lista, EMPLEADOS); //llamada
+                             ^~~~~~~~~
+..\src\notasPARCIAL.c:349:6: error: conflicting types for 'inicializarEmpleados'
+ void inicializarEmpleados(eEmpleado lista[], int tam){
+      ^~~~~~~~~~~~~~~~~~~~
+..\src\notasPARCIAL.c:130:6: note: previous definition of 'inicializarEmpleados' was here
+ void inicializarEmpleados(eEmpleado lista[], int tam){
+      ^~~~~~~~~~~~~~~~~~~~
+..\src\notasPARCIAL.c:357:6: error: conflicting types for 'hardcodearDatosEmpleados'
+ void hardcodearDatosEmpleados(eEmpleado lista[], int tam);
+      ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\notasPARCIAL.c:142:6: note: previous definition of 'hardcodearDatosEmpleados' was here
+ void hardcodearDatosEmpleados(eEmpleado lista[], int tam)
+      ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\notasPARCIAL.c:240:19: error: expected ')' before numeric constant
+ #define EMPLEADOS 100
+                   ^
+..\src\notasPARCIAL.c:359:33: note: in expansion of macro 'EMPLEADOS'
+ hardcodearDatosEmpleados(lista, EMPLEADOS); //llamada
+                                 ^~~~~~~~~
+..\src\notasPARCIAL.c:361:6: error: conflicting types for 'hardcodearDatosEmpleados'
+ void hardcodearDatosEmpleados(eEmpleado lista[], int tam)
+      ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\notasPARCIAL.c:142:6: note: previous definition of 'hardcodearDatosEmpleados' was here
+ void hardcodearDatosEmpleados(eEmpleado lista[], int tam)
+      ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\notasPARCIAL.c: In function 'hardcodearDatosEmpleados':
+..\src\notasPARCIAL.c:373:9: warning: incompatible implicit declaration of built-in function 'strcpy'
+         strcpy(lista[i].nombre, nombres[i]);
+         ^~~~~~
+..\src\notasPARCIAL.c:373:9: note: include '<string.h>' or provide a declaration of 'strcpy'
+..\src\notasPARCIAL.c:374:17: error: 'eEmpleado {aka struct <anonymous>}' has no member named 'sexo'
+         lista[i].sexo = sexo[i];
+                 ^
+..\src\notasPARCIAL.c:375:17: error: 'eEmpleado {aka struct <anonymous>}' has no member named 'sueldoBruto'
+         lista[i].sueldoBruto = sueldosBruto[i];
+                 ^
+..\src\notasPARCIAL.c:376:17: error: 'eEmpleado {aka struct <anonymous>}' has no member named 'sueldoNeto'
+         lista[i].sueldoNeto = sueldosBruto[i] * 0.85;
+                 ^
+..\src\notasPARCIAL.c: At top level:
+..\src\notasPARCIAL.c:383:5: error: conflicting types for 'buscarLibre'
+ int buscarLibre(eEmpleado lista[], int tam)
+     ^~~~~~~~~~~
+..\src\notasPARCIAL.c:164:5: note: previous definition of 'buscarLibre' was here
+ int buscarLibre(eEmpleado lista[], int tam)
+     ^~~~~~~~~~~
+..\src\notasPARCIAL.c:399:1: warning: data definition has no type or storage class
+ indice = buscarLibre(lista, EMPLEADOS);
+ ^~~~~~
+..\src\notasPARCIAL.c:399:1: warning: type defaults to 'int' in declaration of 'indice' [-Wimplicit-int]
+..\src\notasPARCIAL.c:399:1: error: redefinition of 'indice'
+..\src\notasPARCIAL.c:180:1: note: previous definition of 'indice' was here
+ indice = buscarLibre(lista, EMPLEADOS);
+ ^~~~~~
+..\src\notasPARCIAL.c:399:10: error: initializer element is not constant
+ indice = buscarLibre(lista, EMPLEADOS);
+          ^~~~~~~~~~~
+..\src\notasPARCIAL.c:401:1: error: expected identifier or '(' before 'if'
+ if( indice != -1 ){
+ ^~
+..\src\notasPARCIAL.c:404:1: error: expected identifier or '(' before 'else'
+ else{
+ ^~~~
+..\src\notasPARCIAL.c:409:0: warning: "EMPLEADOS" redefined
+ #define EMPLEADOS 6
+ 
+..\src\notasPARCIAL.c:240:0: note: this is the location of the previous definition
+ #define EMPLEADOS 100
+ 
+..\src\notasPARCIAL.c:411:1: error: unknown type name 'eSectores'
+ eSectores listaSectores[SECTORES];
+ ^~~~~~~~~
+..\src\notasPARCIAL.c:408:18: error: expected ')' before numeric constant
+ #define SECTORES 3
+                  ^
+..\src\notasPARCIAL.c:418:31: note: in expansion of macro 'SECTORES'
+ listarSectores(listaSectores, SECTORES);
+                               ^~~~~~~~
+..\src\notasPARCIAL.c:420:8: error: expected declaration specifiers or '...' before string constant
+ printf("Codigo de sector");
+        ^~~~~~~~~~~~~~~~~~
+..\src\notasPARCIAL.c:421:7: error: expected declaration specifiers or '...' before string constant
+ scanf("%d", &sectorAux);
+       ^~~~
+..\src\notasPARCIAL.c:421:13: error: expected declaration specifiers or '...' before '&' token
+ scanf("%d", &sectorAux);
+             ^
+..\src\notasPARCIAL.c:423:1: error: expected identifier or '(' before 'for'
+ for(i=0; i<SECTORES; i++){
+ ^~~
+..\src\notasPARCIAL.c:423:11: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
+ for(i=0; i<SECTORES; i++){
+           ^
+..\src\notasPARCIAL.c:423:23: error: expected '=', ',', ';', 'asm' or '__attribute__' before '++' token
+ for(i=0; i<SECTORES; i++){
+                       ^~
+..\src\notasPARCIAL.c:430:1: error: expected identifier or '(' before 'for'
+ for(i=0; i<EMPLEADOS; i++){
+ ^~~
+..\src\notasPARCIAL.c:430:11: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
+ for(i=0; i<EMPLEADOS; i++){
+           ^
+..\src\notasPARCIAL.c:430:24: error: expected '=', ',', ';', 'asm' or '__attribute__' before '++' token
+ for(i=0; i<EMPLEADOS; i++){
+                        ^~
+..\src\notasPARCIAL.c:408:18: error: expected ')' before numeric constant
+ #define SECTORES 3
+                  ^
+..\src\notasPARCIAL.c:439:31: note: in expansion of macro 'SECTORES'
+ listarSectores(listaSectores, SECTORES);
+                               ^~~~~~~~
+..\src\notasPARCIAL.c:441:8: error: expected declaration specifiers or '...' before string constant
+ printf("Codigo de sector");
+        ^~~~~~~~~~~~~~~~~~
+..\src\notasPARCIAL.c:442:7: error: expected declaration specifiers or '...' before string constant
+ scanf("%d", &sectorAux);
+       ^~~~
+..\src\notasPARCIAL.c:442:13: error: expected declaration specifiers or '...' before '&' token
+ scanf("%d", &sectorAux);
+             ^
+..\src\notasPARCIAL.c:444:1: error: expected identifier or '(' before 'for'
+ for(i=0; i<SECTORES; i++){
+ ^~~
+..\src\notasPARCIAL.c:444:11: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
+ for(i=0; i<SECTORES; i++){
+           ^
+..\src\notasPARCIAL.c:444:23: error: expected '=', ',', ';', 'asm' or '__attribute__' before '++' token
+ for(i=0; i<SECTORES; i++){
+                       ^~
+..\src\notasPARCIAL.c:462:2: error: conflicting types for 'eFecha'
+ }eFecha;
+  ^~~~~~
+..\src\notasPARCIAL.c:246:2: note: previous declaration of 'eFecha' was here
+ }eFecha;
+  ^~~~~~
+..\src\notasPARCIAL.c:474:2: error: expected ':', ',', ';', '}' or '__attribute__' before 'char'
+  char titulo[31];
+  ^~~~
+..\src\notasPARCIAL.c:484:7: error: expected '=', ',', ';', 'asm' or '__attribute__' before numeric constant
+ libro 1 a autores muchos
+       ^
+..\src\notasPARCIAL.c:537:5: error: redefinition of 'main'
+ int main(){
+     ^~~~
+..\src\notasPARCIAL.c:14:5: note: previous definition of 'main' was here
+ int main(void) {
+     ^~~~
+..\src\notasPARCIAL.c: In function 'main':
+..\src\notasPARCIAL.c:542:16: error: incompatible type for argument 1 of 'listarAutores'
+  listarAutores(autores, AUTORES);
+                ^~~~~~~
+..\src\notasPARCIAL.c:535:6: note: expected 'eAutor {aka struct <anonymous>}' but argument is of type 'eAutor * {aka struct <anonymous> *}'
+ void listarAutores( eAutor, int );
+      ^~~~~~~~~~~~~
+..\src\notasPARCIAL.c:555:30: error: 'eLibro {aka struct <anonymous>}' has no member named 'idAutor'
+   if( idAutorAux == libros[i].idAutor ){
+                              ^
+..\src\notasPARCIAL.c:556:26: error: 'eLibro {aka struct <anonymous>}' has no member named 'titulo'
+    printf("%s", libros[i].titulo);
+                          ^
+..\src\notasPARCIAL.c:538:9: warning: variable 'libros' set but not used [-Wunused-but-set-variable]
+  eLibro libros[LIBROS];
+         ^~~~~~
+..\src\notasPARCIAL.c: At top level:
+..\src\notasPARCIAL.c:571:6: error: conflicting types for 'listarAutores'
+ void listarAutores( eAutor autores[], int tamanio ){
+      ^~~~~~~~~~~~~
+..\src\notasPARCIAL.c:535:6: note: previous declaration of 'listarAutores' was here
+ void listarAutores( eAutor, int );
+      ^~~~~~~~~~~~~
+..\src\notasPARCIAL.c:602:5: error: redefinition of 'main'
+ int main(){
+     ^~~~
+..\src\notasPARCIAL.c:14:5: note: previous definition of 'main' was here
+ int main(void) {
+     ^~~~
+..\src\notasPARCIAL.c: In function 'main':
+..\src\notasPARCIAL.c:618:20: error: 'eLibro {aka struct <anonymous>}' has no member named 'idLibro'
+       if( libros[k].idLibro == librosAutores[j].idLibro ){
+                    ^
+..\src\notasPARCIAL.c:619:53: error: 'eLibro {aka struct <anonymous>}' has no member named 'titulo'
+        printf("%s\t%s", autores[i].nombre, libros[k].titulo);
+                                                     ^
+..\src\notasPARCIAL.c:631:30: error: 'eLibro {aka struct <anonymous>}' has no member named 'idAutor'
+   if( idAutorAux == libros[i].idAutor ){
+                              ^
+..\src\notasPARCIAL.c:632:26: error: 'eLibro {aka struct <anonymous>}' has no member named 'titulo'
+    printf("%s", libros[i].titulo);
+                          ^
+..\src\notasPARCIAL.c:603:9: warning: variable 'libros' set but not used [-Wunused-but-set-variable]
+  eLibro libros[LIBROS];
+         ^~~~~~
+..\src\notasPARCIAL.c: At top level:
+..\src\notasPARCIAL.c:637:1: error: unknown type name 'RELACIONES'
+ RELACIONES ENTRE ESTRUCTURAS O ENTIDADES
+ ^~~~~~~~~~
+..\src\notasPARCIAL.c:637:18: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'ESTRUCTURAS'
+ RELACIONES ENTRE ESTRUCTURAS O ENTIDADES
+                  ^~~~~~~~~~~
+..\src\notasPARCIAL.c:637:18: error: unknown type name 'ESTRUCTURAS'
+
+16:26:33 Build Failed. 91 errors, 20 warnings. (took 227ms)
+

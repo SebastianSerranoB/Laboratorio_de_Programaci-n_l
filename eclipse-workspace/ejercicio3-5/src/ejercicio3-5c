@@ -1,0 +1,124 @@
+/*
+ ============================================================================
+ Name        : ejercicio3-5.c
+ Author      : SEBASTIAN SERRANO
+ Division     : K-1
+ Ejercicio 3-5:
+Realizar un programa en donde se puedan utilizar los prototipos de la función Sumar en sus 4
+combinaciones.
+int Sumar1(int, int);
+int Sumar2(void);
+void Sumar3(int, int);
+void Sumar4(void);
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int sumar1(int a, int b);
+int sumar2(void);
+void sumar3(int, int);
+void sumar4(void);
+
+int main(void)
+{
+	setbuf(stdout, NULL);
+
+
+	int numero1, numero2 , resultado;
+
+	printf("******CON FUNCION: sumar1******\n");
+
+	printf("\nIngrese el primer numero: ");
+	scanf("%d", &numero1);
+	printf("\nIngrese el segundo numero: ");
+	scanf("%d", &numero2);
+
+	resultado = sumar1(numero1, numero2);
+
+
+	printf("\nLa suma entre %d y %d es de: %d\n", numero1, numero2, resultado);
+
+	//********** SEGUNDA FUNCION ***************
+	printf("\n******CON FUNCION: sumar2******\n");
+
+	resultado = sumar2();
+	//printf("\nLa suma entre %d y %d es de: %d", numero1, numero2, resultado);  el resultado es la suma entre los nmeros ingresados en f sumar2();pero, los numeros que muestra para sumar son los ingresados en la primer funcion
+	printf("\nEl resultado es: %d\n", resultado);
+
+	//********** TERCER FUNCION ************
+	printf("\n******CON FUNCION: sumar3******\n");
+
+	printf("\nIngrese el primer numero: ");
+	scanf("%d", &numero1);
+	printf("\nIngrese el segundo numero: ");
+	scanf("%d", &numero2);
+
+	sumar3(numero1, numero2);
+
+	//********* CUARTA FUNCION ************
+	printf("\n******CON FUNCION: sumar4******\n");
+
+	sumar4();
+
+
+	printf("\n****FIN DEL PROGRAMA****");
+	return EXIT_SUCCESS;
+}
+
+
+
+
+
+
+
+
+
+
+int sumar1(int a, int b) // como lo hago sin asignarle nombre a las variables de la funcion?
+{
+	int total;
+
+	total = a + b;
+
+
+	return total;
+}
+
+int sumar2(void)
+{
+	int numero1, numero2, total;
+
+	printf("\nIngrese el primer numero: ");
+	scanf("%d", &numero1);
+	printf("\nIngrese el segundo numero: ");
+	scanf("%d", &numero2);
+
+	total = numero1 + numero2;
+
+	return total;
+}
+
+void sumar3(int a, int b)
+{
+	int total;
+
+	total = a + b;
+
+	printf("\nEl resultado es: %d\n", total);
+}
+
+void sumar4(void)
+{
+	int numero1, numero2, total;
+
+	printf("\nIngrese el primer numero: ");
+	scanf("%d", &numero1);
+	printf("\nIngrese el segundo numero: ");
+	scanf("%d", &numero2);
+
+	total = numero1 + numero2;
+
+	printf("\nEl resultado es: %d\n", total);
+}

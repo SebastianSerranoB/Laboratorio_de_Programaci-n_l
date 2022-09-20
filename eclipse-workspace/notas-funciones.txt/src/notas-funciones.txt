@@ -1,0 +1,53 @@
+ITERACIONES
+
+
+asignas una variable de control, le decis la cantidad de vueltas que tiene que dar, y haces que esa variable de control cuente i++ todo adentro de esa condicion
+se utiliza el for cuando ya se la cantidad de ejecuciones que necesito
+for(asigno,condicion,itero)
+{}
+for(i=0;i<5;i++)
+{
+
+}
+
+siempre va a entrar al menos una vez al while
+do
+{
+	printf("messirve")
+
+}while(respuesta == 's');
+
+
+el while que conociamos, lo vamos a usar probablemente para verificaciones, corroboraciones
+while( genero == "f")
+{}
+
+
+yo puedo meter un while dentro de un for, un do while dentro de un for, un for dentro de un while, etc
+incluso se pueden llegar a hacer similares funciones con cada uno pero es preferible usarlas para lo que estan pensadas
+como el martillo es para el clavo, si bien podrias clavarlo con una tenaza.
+
+
+TAMBIEN puedo usar siempre el break; para salir de estos bucles... buen dato para evitar los bucles infinitos.. probarlos en otro lenguaje y despues borrar el break si conviene
+for(condicion)
+{
+if(condicion)
+{break;}
+
+IFDEF
+IFNDEF
+DEF
+BIBLIOTECAS
+CHEQUEAN QUE EXISTA HEADER H  Y Cc uerpo
+DOCXGEN
+ESTO EN EL .H , PARA EXPLCIARLES QUE HACE, EL .C LO PODES CERRAR PARA QUE NO LO TOQUEN
+/// FUNCION DE LA FUNCION(VALGA LA REDUNDANCIA), DIVIDIR ENTRE DOS NUMEROS
+///	@PARAM NUM1  NUMERO ENTERO, DIVIDENDO
+/// @PARAM NUM2  NUMERO ENTERO, DIVISOR
+/// @PARAM RETURN RESULTADO  NUMERO FLOTANTE, RESULTADO DE LA DIVISION
+FLOAT(INT NUM1, INT NUM2);
+
+@brief
+@param
+@param
+@return

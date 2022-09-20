@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ll_map(2-formas)/src/ll_map(2-formas).c&apos; to &apos;ll_map(2-formas).txt&apos;" description="Rename resource &apos;ll_map(2-formas).c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/ll_map(2-formas).c" name="ll_map(2-formas).txt" stamp="1659467368532" updateReferences="true"/>
+</session>

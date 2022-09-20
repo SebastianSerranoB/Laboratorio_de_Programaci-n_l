@@ -1,0 +1,96 @@
+16:26:22 **** Rebuild of configuration Debug for project ejercicio6-3v1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ejercicio6-3v1.o" "..\\src\\ejercicio6-3v1.c" 
+In file included from c:\mingw\include\string.h:170:0,
+                 from ..\src\ejercicio6-3v1.c:31:
+c:\mingw\include\wchar.h: In function 'main':
+c:\mingw\include\wchar.h:494:20: error: nested function 'wcsnlen' declared 'extern'
+ __CRT_ALIAS size_t wcsnlen (const wchar_t *__text, size_t __maxlen)
+                    ^~~~~~~
+In file included from ..\src\ejercicio6-3v1.c:31:0:
+c:\mingw\include\string.h:196:20: error: nested function 'strnlen' declared 'extern'
+ __CRT_ALIAS size_t strnlen (const char *__text, size_t __maxlen)
+                    ^~~~~~~
+c:\mingw\include\string.h:227:17: error: nested function 'strerror_s' declared 'extern'
+ __CRT_ALIAS int strerror_s (char *__buf, size_t __len, int __err)
+                 ^~~~~~~~~~
+In file included from ..\src\ejercicio6-3v1.c:32:0:
+c:\mingw\include\ctype.h:240:43: error: nested function 'isleadbyte' declared 'extern'
+ __CRT_INLINE __cdecl __MINGW_NOTHROW  int isleadbyte (int c)
+                                           ^~~~~~~~~~
+c:\mingw\include\ctype.h:240:43: error: static declaration of 'isleadbyte' follows non-static declaration
+c:\mingw\include\ctype.h:76:38: note: previous declaration of 'isleadbyte' was here
+ _CRTIMP __cdecl __MINGW_NOTHROW  int isleadbyte (int);
+                                      ^~~~~~~~~~
+..\src\ejercicio6-3v1.c:34:6: warning: 'main' is normally a non-static function [-Wmain]
+  int main(void){
+      ^~~~
+..\src\ejercicio6-3v1.c: At top level:
+..\src\ejercicio6-3v1.c:117:5: error: redefinition of 'main'
+ int main(void){
+     ^~~~
+..\src\ejercicio6-3v1.c:14:5: note: previous definition of 'main' was here
+ int main(void) {
+     ^~~~
+..\src\ejercicio6-3v1.c: In function 'main':
+..\src\ejercicio6-3v1.c:132:13: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  longitud = strlen( apellido );
+             ^~~~~~
+In file included from ..\src\ejercicio6-3v1.c:31:0:
+c:\mingw\include\string.h:83:41: note: previous declaration of 'strlen' was here
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t strlen (const char *) __MINGW_ATTRIB_PURE;
+                                         ^~~~~~
+..\src\ejercicio6-3v1.c:132:13: warning: incompatible implicit declaration of built-in function 'strlen'
+  longitud = strlen( apellido );
+             ^~~~~~
+..\src\ejercicio6-3v1.c:132:13: note: include '<string.h>' or provide a declaration of 'strlen'
+..\src\ejercicio6-3v1.c:155:2: warning: implicit declaration of function 'strlwr' [-Wimplicit-function-declaration]
+  strlwr(apellido);
+  ^~~~~~
+In file included from ..\src\ejercicio6-3v1.c:31:0:
+c:\mingw\include\string.h:140:40: note: previous declaration of 'strlwr' was here
+ _CRTIMP __cdecl __MINGW_NOTHROW  char *strlwr (char *);
+                                        ^~~~~~
+..\src\ejercicio6-3v1.c:155:2: error: incompatible implicit declaration of function 'strlwr'
+  strlwr(apellido);
+  ^~~~~~
+In file included from ..\src\ejercicio6-3v1.c:31:0:
+c:\mingw\include\string.h:140:40: note: previous implicit declaration of 'strlwr' was here
+ _CRTIMP __cdecl __MINGW_NOTHROW  char *strlwr (char *);
+                                        ^~~~~~
+..\src\ejercicio6-3v1.c:158:16: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  apellido[0] = toupper( apellido[0] );
+                ^~~~~~~
+In file included from ..\src\ejercicio6-3v1.c:32:0:
+c:\mingw\include\ctype.h:96:38: note: previous declaration of 'toupper' was here
+ _CRTIMP __cdecl __MINGW_NOTHROW  int toupper (int);
+                                      ^~~~~~~
+..\src\ejercicio6-3v1.c:174:2: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
+  strcpy( apeNom, apellido );
+  ^~~~~~
+In file included from ..\src\ejercicio6-3v1.c:31:0:
+c:\mingw\include\string.h:79:40: note: previous declaration of 'strcpy' was here
+ _CRTIMP __cdecl __MINGW_NOTHROW  char *strcpy (char *, const char *);
+                                        ^~~~~~
+..\src\ejercicio6-3v1.c:174:2: warning: incompatible implicit declaration of built-in function 'strcpy'
+  strcpy( apeNom, apellido );
+  ^~~~~~
+..\src\ejercicio6-3v1.c:174:2: note: include '<string.h>' or provide a declaration of 'strcpy'
+..\src\ejercicio6-3v1.c:175:2: warning: implicit declaration of function 'strcat' [-Wimplicit-function-declaration]
+  strcat( apeNom, ", " );
+  ^~~~~~
+In file included from ..\src\ejercicio6-3v1.c:31:0:
+c:\mingw\include\string.h:75:40: note: previous declaration of 'strcat' was here
+ _CRTIMP __cdecl __MINGW_NOTHROW  char *strcat (char *, const char *);
+                                        ^~~~~~
+..\src\ejercicio6-3v1.c:175:2: warning: incompatible implicit declaration of built-in function 'strcat'
+  strcat( apeNom, ", " );
+  ^~~~~~
+..\src\ejercicio6-3v1.c:175:2: note: include '<string.h>' or provide a declaration of 'strcat'
+At top level:
+..\src\ejercicio6-3v1.c:34:6: warning: 'main' defined but not used [-Wunused-function]
+  int main(void){
+      ^~~~
+
+16:26:23 Build Failed. 7 errors, 10 warnings. (took 222ms)
+

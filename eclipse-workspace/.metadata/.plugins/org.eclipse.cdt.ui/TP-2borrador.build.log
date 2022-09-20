@@ -1,0 +1,26 @@
+16:25:52 **** Rebuild of configuration Debug for project TP-2borrador ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP-2borrador.o" "..\\src\\TP-2borrador.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\arrayPassenger.o" "..\\src\\arrayPassenger.c" 
+..\src\arrayPassenger.c: In function 'flightStatus':
+..\src\arrayPassenger.c:257:11: error: switch quantity not an integer
+    switch(array[i].flightData.flightID)
+           ^~~~~
+..\src\arrayPassenger.c:259:5: error: case label does not reduce to an integer constant
+     case "F1":
+     ^~~~
+..\src\arrayPassenger.c:260:5: error: case label does not reduce to an integer constant
+     case "F2":
+     ^~~~
+..\src\arrayPassenger.c:263:5: error: case label does not reduce to an integer constant
+     case "F3":
+     ^~~~
+..\src\arrayPassenger.c:264:5: error: case label does not reduce to an integer constant
+     case "F4":
+     ^~~~
+..\src\arrayPassenger.c:267:5: error: case label does not reduce to an integer constant
+     case "F5":
+     ^~~~
+
+16:25:53 Build Failed. 6 errors, 0 warnings. (took 493ms)
+

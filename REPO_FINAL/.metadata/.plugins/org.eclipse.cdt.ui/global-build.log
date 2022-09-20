@@ -1,0 +1,10 @@
+16:23:32 **** Rebuild of configuration Debug for project Finalprueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FINAL_LABORATORIO_l.o" "..\\src\\FINAL_LABORATORIO_l.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\LinkedList.o" "..\\src\\LinkedList.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\alumno.o" "..\\src\\alumno.c" 
+gcc -o Finalprueba.exe "src\\FINAL_LABORATORIO_l.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\alumno.o" "src\\controller.o" "src\\parser.o" 
+Info: Nothing to build for Finalprueba

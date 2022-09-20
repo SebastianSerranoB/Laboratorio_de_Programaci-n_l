@@ -1,0 +1,9 @@
+16:25:54 **** Rebuild of configuration Debug for project TP2_LABORATORIO_I ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2-RECUPERATORIO.o" "..\\src\\TP2-RECUPERATORIO.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funcionesAlumno.o" "..\\src\\funcionesAlumno.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\arrayPassenger.o" "..\\src\\arrayPassenger.c" 
+gcc -o TP2_LABORATORIO_I.exe "src\\TP2-RECUPERATORIO.o" "src\\arrayPassenger.o" "src\\funcionesAlumno.o" 
+
+16:25:55 Build Finished. 0 errors, 0 warnings. (took 1s.139ms)
+

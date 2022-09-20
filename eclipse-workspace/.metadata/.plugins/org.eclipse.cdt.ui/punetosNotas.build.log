@@ -1,0 +1,11 @@
+16:26:39 **** Rebuild of configuration Debug for project punetosNotas ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\punetosNotas.o" "..\\src\\punetosNotas.c" 
+..\src\punetosNotas.c: In function 'main':
+..\src\punetosNotas.c:46:12: warning: variable 'ptrPer' set but not used [-Wunused-but-set-variable]
+  EPersona *ptrPer;
+            ^~~~~~
+gcc -o punetosNotas.exe "src\\punetosNotas.o" 
+
+16:26:39 Build Finished. 0 errors, 1 warnings. (took 612ms)
+

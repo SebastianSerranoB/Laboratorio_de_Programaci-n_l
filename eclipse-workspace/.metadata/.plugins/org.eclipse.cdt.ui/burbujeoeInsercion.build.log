@@ -1,0 +1,7 @@
+16:25:59 **** Rebuild of configuration Debug for project burbujeoeInsercion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\burbujeoeInsercion.o" "..\\src\\burbujeoeInsercion.c" 
+gcc -o burbujeoeInsercion.exe "src\\burbujeoeInsercion.o" 
+
+16:25:59 Build Finished. 0 errors, 0 warnings. (took 495ms)
+

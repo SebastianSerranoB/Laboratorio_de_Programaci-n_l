@@ -1,0 +1,20 @@
+/*
+ * Pokemon.h
+ *
+ *  Created on: 31 ago 2022
+ *      Author: admin
+ */
+
+#ifndef POKEMON_H_
+#define POKEMON_H_
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "LinkedList.h"
+
+
+
+
+
+
+#endif /* POKEMON_H_ */

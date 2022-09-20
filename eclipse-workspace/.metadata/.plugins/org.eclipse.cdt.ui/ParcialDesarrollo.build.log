@@ -1,0 +1,11 @@
+16:25:43 **** Rebuild of configuration Debug for project ParcialDesarrollo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Entidades.o" "..\\src\\Entidades.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM.o" "..\\src\\ABM.c" 
+..\src\ABM.c:24:32: fatal error: Funciones_Calculos.h: No such file or directory
+ #include "Funciones_Calculos.h"
+                                ^
+compilation terminated.
+
+16:25:43 Build Failed. 1 errors, 0 warnings. (took 495ms)
+

@@ -1,0 +1,62 @@
+16:26:00 **** Rebuild of configuration Debug for project clase20Abril ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\clase20Abril.o" "..\\src\\clase20Abril.c" 
+..\src\clase20Abril.c: In function 'alta':
+..\src\clase20Abril.c:36:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+  scanf("%d", ticket.codigo);
+          ^
+..\src\clase20Abril.c:47:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+  scanf("%d", ticket.horarioSalida);
+          ^
+..\src\clase20Abril.c:50:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+  scanf("%d", ticket.horarioLlegada);
+          ^
+..\src\clase20Abril.c: In function 'main':
+..\src\clase20Abril.c:125:19: warning: implicit declaration of function 'tolower' [-Wimplicit-function-declaration]
+       confirmar = tolower(confirmar);
+                   ^~~~~~~
+..\src\clase20Abril.c:160:26: warning: implicit declaration of function 'menu' [-Wimplicit-function-declaration]
+        opcionModificar = menu("\n\n1 -ALTA producto\n2 -BAJA producto\n3 -MODIFICACION producto\n4- LISTAR productos\n5- BUSCAR un dato\n6- SALIR");
+                          ^~~~
+..\src\clase20Abril.c:163:8: error: duplicate case value
+        case 1:
+        ^~~~
+..\src\clase20Abril.c:88:3: error: previously used here
+   case 1: //ALTA alta(); pasar esto a una funcion
+   ^~~~
+..\src\clase20Abril.c:165:17: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+         scanf("%d", tickets[i].codigo);
+                 ^
+..\src\clase20Abril.c:166:8: error: duplicate case value
+        case 2:
+        ^~~~
+..\src\clase20Abril.c:103:3: error: previously used here
+   case 2: //BAJA
+   ^~~~
+..\src\clase20Abril.c:170:8: error: duplicate case value
+        case 3:
+        ^~~~
+..\src\clase20Abril.c:146:3: error: previously used here
+   case 3: //MODIFICAR
+   ^~~~
+..\src\clase20Abril.c:176:17: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+         scanf("%d",tickets[i].horarioSalida);
+                 ^
+..\src\clase20Abril.c:180:17: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+         scanf("%d", tickets[i].horarioLlegada);
+                 ^
+..\src\clase20Abril.c:194:3: error: duplicate case value
+   case 4:
+   ^~~~
+..\src\clase20Abril.c:174:8: error: previously used here
+        case 4:
+        ^~~~
+..\src\clase20Abril.c:196:3: error: duplicate case value
+   case 6:
+   ^~~~
+..\src\clase20Abril.c:182:8: error: previously used here
+        case 6:
+        ^~~~
+
+16:26:00 Build Failed. 10 errors, 8 warnings. (took 226ms)
+

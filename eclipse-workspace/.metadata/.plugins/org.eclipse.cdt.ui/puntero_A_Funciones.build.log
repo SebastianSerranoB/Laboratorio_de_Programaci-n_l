@@ -1,0 +1,263 @@
+16:26:40 **** Rebuild of configuration Debug for project puntero_A_Funciones ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\puntero_A_Funciones.o" "..\\src\\puntero_A_Funciones.c" 
+..\src\puntero_A_Funciones.c:12:2: error: expected identifier or '(' before '==' token
+  ============================================================================
+  ^~
+In file included from ..\src\puntero_A_Funciones.c:21:0:
+c:\mingw\include\stdio.h:295:71: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int    setvbuf (FILE *, char *, int, size_t);
+                                                                       ^~~~~~
+c:\mingw\include\stdio.h:345:54: error: unknown type name 'size_t'
+ extern int __mingw_stdio_redirect__(snprintf)(char*, size_t, const char*, ...);
+                                                      ^~~~~~
+c:\mingw\include\stdio.h:349:55: error: unknown type name 'size_t'
+ extern int __mingw_stdio_redirect__(vsnprintf)(char*, size_t, const char*, __VALIST);
+                                                       ^~~~~~
+c:\mingw\include\stdio.h:490:57: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int _snprintf (char *, size_t, const char *, ...);
+                                                         ^~~~~~
+c:\mingw\include\stdio.h:491:58: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int _vsnprintf (char *, size_t, const char *, __VALIST);
+                                                          ^~~~~~
+c:\mingw\include\stdio.h:502:23: error: unknown type name 'size_t'
+ int snprintf (char *, size_t, const char *, ...);
+                       ^~~~~~
+c:\mingw\include\stdio.h:505:24: error: unknown type name 'size_t'
+ int vsnprintf (char *, size_t, const char *, __VALIST);
+                        ^~~~~~
+c:\mingw\include\stdio.h:647:33: error: unknown type name 'size_t'
+ getdelim (char ** __restrict__, size_t * __restrict__, int, FILE * __restrict__);
+                                 ^~~~~~
+c:\mingw\include\stdio.h:650:32: error: unknown type name 'size_t'
+ getline (char ** __restrict__, size_t * __restrict__, FILE * __restrict__);
+                                ^~~~~~
+c:\mingw\include\stdio.h:734:34: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t fread (void *, size_t, size_t, FILE *);
+                                  ^~~~~~
+c:\mingw\include\stdio.h:734:56: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t fread (void *, size_t, size_t, FILE *);
+                                                        ^~~~~~
+c:\mingw\include\stdio.h:734:64: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t fread (void *, size_t, size_t, FILE *);
+                                                                ^~~~~~
+c:\mingw\include\stdio.h:735:34: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t fwrite (const void *, size_t, size_t, FILE *);
+                                  ^~~~~~
+c:\mingw\include\stdio.h:735:63: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t fwrite (const void *, size_t, size_t, FILE *);
+                                                               ^~~~~~
+c:\mingw\include\stdio.h:735:71: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t fwrite (const void *, size_t, size_t, FILE *);
+                                                                       ^~~~~~
+c:\mingw\include\stdio.h:962:64: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int    _snwprintf (wchar_t *, size_t, const wchar_t *, ...);
+                                                                ^~~~~~
+c:\mingw\include\stdio.h:964:65: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int    _vsnwprintf (wchar_t *, size_t, const wchar_t *, __VALIST);
+                                                                 ^~~~~~
+c:\mingw\include\stdio.h:1006:52: error: unknown type name 'size_t'
+ __cdecl __MINGW_NOTHROW  int snwprintf (wchar_t *, size_t, const wchar_t *, ...);
+                                                    ^~~~~~
+c:\mingw\include\stdio.h:1007:53: error: unknown type name 'size_t'
+ __cdecl __MINGW_NOTHROW  int vsnwprintf (wchar_t *, size_t, const wchar_t *, __VALIST);
+                                                     ^~~~~~
+In file included from ..\src\puntero_A_Funciones.c:22:0:
+c:\mingw\include\stdlib.h:468:50: error: unknown type name 'size_t'
+ wchar_t *_wfullpath (wchar_t *, const wchar_t *, size_t);
+                                                  ^~~~~~
+c:\mingw\include\stdlib.h:474:34: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t wcstombs (char *, const wchar_t *, size_t);
+                                  ^~~~~~
+c:\mingw\include\stdlib.h:474:76: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t wcstombs (char *, const wchar_t *, size_t);
+                                                                            ^~~~~~
+c:\mingw\include\stdlib.h:477:59: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int mblen (const char *, size_t);
+                                                           ^~~~~~
+c:\mingw\include\stdlib.h:478:34: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t mbstowcs (wchar_t *, const char *, size_t);
+                                  ^~~~~~
+c:\mingw\include\stdlib.h:478:76: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t mbstowcs (wchar_t *, const char *, size_t);
+                                                                            ^~~~~~
+c:\mingw\include\stdlib.h:479:71: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int mbtowc (wchar_t *, const char *, size_t);
+                                                                       ^~~~~~
+c:\mingw\include\stdlib.h:486:57: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  void *realloc (void *, size_t);
+                                                         ^~~~~~
+c:\mingw\include\stdlib.h:504:30: error: unknown type name 'size_t'
+ (const void *, const void *, size_t, size_t, int (*)(const void *, const void *));
+                              ^~~~~~
+c:\mingw\include\stdlib.h:504:38: error: unknown type name 'size_t'
+ (const void *, const void *, size_t, size_t, int (*)(const void *, const void *));
+                                      ^~~~~~
+c:\mingw\include\stdlib.h:507:10: error: unknown type name 'size_t'
+ (void *, size_t, size_t, int (*)(const void *, const void *));
+          ^~~~~~
+c:\mingw\include\stdlib.h:507:18: error: unknown type name 'size_t'
+ (void *, size_t, size_t, int (*)(const void *, const void *));
+                  ^~~~~~
+c:\mingw\include\stdlib.h:569:71: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char *_fullpath (char*, const char*, size_t);
+                                                                       ^~~~~~
+In file included from c:\mingw\include\string.h:62:0,
+                 from ..\src\puntero_A_Funciones.c:23:
+c:\mingw\include\strings.h:64:70: error: unknown type name 'size_t'
+ int __cdecl __MINGW_NOTHROW strncasecmp( const char *, const char *, size_t );
+                                                                      ^~~~~~
+c:\mingw\include\strings.h:81:77: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int _strnicmp( const char *, const char *, size_t );
+                                                                             ^~~~~~
+In file included from ..\src\puntero_A_Funciones.c:23:0:
+c:\mingw\include\string.h:70:67: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  void *memchr (const void *, int, size_t) __MINGW_ATTRIB_PURE;
+                                                                   ^~~~~~
+c:\mingw\include\string.h:71:74: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int memcmp (const void *, const void *, size_t) __MINGW_ATTRIB_PURE;
+                                                                          ^~~~~~
+c:\mingw\include\string.h:72:70: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  void *memcpy (void *, const void *, size_t);
+                                                                      ^~~~~~
+c:\mingw\include\string.h:73:71: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  void *memmove (void *, const void *, size_t);
+                                                                       ^~~~~~
+c:\mingw\include\string.h:74:61: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  void *memset (void *, int, size_t);
+                                                             ^~~~~~
+c:\mingw\include\string.h:80:34: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t strcspn (const char *, const char *) __MINGW_ATTRIB_PURE;
+                                  ^~~~~~
+c:\mingw\include\string.h:83:34: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t strlen (const char *) __MINGW_ATTRIB_PURE;
+                                  ^~~~~~
+c:\mingw\include\string.h:84:71: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char *strncat (char *, const char *, size_t);
+                                                                       ^~~~~~
+c:\mingw\include\string.h:85:75: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int strncmp (const char *, const char *, size_t) __MINGW_ATTRIB_PURE;
+                                                                           ^~~~~~
+c:\mingw\include\string.h:86:71: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char *strncpy (char *, const char *, size_t);
+                                                                       ^~~~~~
+c:\mingw\include\string.h:89:34: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t strspn (const char *, const char *) __MINGW_ATTRIB_PURE;
+                                  ^~~~~~
+c:\mingw\include\string.h:92:34: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t strxfrm (char *, const char *, size_t);
+                                  ^~~~~~
+c:\mingw\include\string.h:92:72: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t strxfrm (char *, const char *, size_t);
+                                                                        ^~~~~~
+c:\mingw\include\string.h:98:77: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  void *_memccpy (void *, const void *, int, size_t);
+                                                                             ^~~~~~
+c:\mingw\include\string.h:99:76: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int _memicmp (const void *, const void *, size_t);
+                                                                            ^~~~~~
+c:\mingw\include\string.h:104:63: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char *_strnset (char *, int, size_t);
+                                                               ^~~~~~
+c:\mingw\include\string.h:108:68: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  void _swab (const char *, char *, size_t);
+                                                                    ^~~~~~
+c:\mingw\include\string.h:126:76: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int _strncoll(const char *, const char *, size_t);
+                                                                            ^~~~~~
+c:\mingw\include\string.h:127:77: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int _strnicoll(const char *, const char *, size_t);
+                                                                             ^~~~~~
+c:\mingw\include\string.h:134:76: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  void *memccpy (void *, const void *, int, size_t);
+                                                                            ^~~~~~
+c:\mingw\include\string.h:135:75: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int memicmp (const void *, const void *, size_t);
+                                                                           ^~~~~~
+c:\mingw\include\string.h:141:76: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int strnicmp (const char *, const char *, size_t);
+                                                                            ^~~~~~
+c:\mingw\include\string.h:142:62: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char *strnset (char *, int, size_t);
+                                                              ^~~~~~
+c:\mingw\include\string.h:151:67: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  void swab (const char *, char *, size_t);
+                                                                   ^~~~~~
+In file included from c:\mingw\include\string.h:170:0,
+                 from ..\src\puntero_A_Funciones.c:23:
+c:\mingw\include\wchar.h:397:34: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t wcscspn (const wchar_t *, const wchar_t *);
+                                  ^~~~~~
+c:\mingw\include\wchar.h:398:34: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t wcslen (const wchar_t *);
+                                  ^~~~~~
+c:\mingw\include\wchar.h:399:80: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  wchar_t *wcsncat (wchar_t *, const wchar_t *, size_t);
+                                                                                ^~~~~~
+c:\mingw\include\wchar.h:400:81: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int wcsncmp (const wchar_t *, const wchar_t *, size_t);
+                                                                                 ^~~~~~
+c:\mingw\include\wchar.h:401:80: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  wchar_t *wcsncpy (wchar_t *, const wchar_t *, size_t);
+                                                                                ^~~~~~
+c:\mingw\include\wchar.h:404:34: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t wcsspn (const wchar_t *, const wchar_t *);
+                                  ^~~~~~
+c:\mingw\include\wchar.h:407:34: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t wcsxfrm (wchar_t *, const wchar_t *, size_t);
+                                  ^~~~~~
+c:\mingw\include\wchar.h:407:78: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t wcsxfrm (wchar_t *, const wchar_t *, size_t);
+                                                                              ^~~~~~
+c:\mingw\include\wchar.h:416:83: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int _wcsnicmp (const wchar_t *, const wchar_t *, size_t);
+                                                                                   ^~~~~~
+c:\mingw\include\wchar.h:417:73: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  wchar_t *_wcsnset (wchar_t *, wchar_t, size_t);
+                                                                         ^~~~~~
+c:\mingw\include\wchar.h:423:83: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int _wcsncoll (const wchar_t *, const wchar_t *, size_t);
+                                                                                   ^~~~~~
+c:\mingw\include\wchar.h:424:84: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int _wcsnicoll (const wchar_t *, const wchar_t *, size_t);
+                                                                                    ^~~~~~
+c:\mingw\include\wchar.h:461:82: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int wcsnicmp (const wchar_t *, const wchar_t *, size_t);
+                                                                                  ^~~~~~
+c:\mingw\include\wchar.h:462:72: error: unknown type name 'size_t'
+ _CRTIMP __cdecl __MINGW_NOTHROW  wchar_t *wcsnset (wchar_t *, wchar_t, size_t);
+                                                                        ^~~~~~
+c:\mingw\include\wchar.h:491:8: error: unknown type name 'size_t'
+ extern size_t __mingw_wcsnlen (const wchar_t *, size_t);
+        ^~~~~~
+c:\mingw\include\wchar.h:491:49: error: unknown type name 'size_t'
+ extern size_t __mingw_wcsnlen (const wchar_t *, size_t);
+                                                 ^~~~~~
+c:\mingw\include\wchar.h:494:13: error: unknown type name 'size_t'
+ __CRT_ALIAS size_t wcsnlen (const wchar_t *__text, size_t __maxlen)
+             ^~~~~~
+c:\mingw\include\wchar.h:494:52: error: unknown type name 'size_t'
+ __CRT_ALIAS size_t wcsnlen (const wchar_t *__text, size_t __maxlen)
+                                                    ^~~~~~
+In file included from ..\src\puntero_A_Funciones.c:23:0:
+c:\mingw\include\string.h:193:8: error: unknown type name 'size_t'
+ extern size_t __mingw_strnlen (const char *, size_t);
+        ^~~~~~
+c:\mingw\include\string.h:193:46: error: unknown type name 'size_t'
+ extern size_t __mingw_strnlen (const char *, size_t);
+                                              ^~~~~~
+c:\mingw\include\string.h:196:13: error: unknown type name 'size_t'
+ __CRT_ALIAS size_t strnlen (const char *__text, size_t __maxlen)
+             ^~~~~~
+c:\mingw\include\string.h:196:49: error: unknown type name 'size_t'
+ __CRT_ALIAS size_t strnlen (const char *__text, size_t __maxlen)
+                                                 ^~~~~~
+c:\mingw\include\string.h:212:37: error: unknown type name 'size_t'
+ extern int strerror_r (int, char *, size_t);
+                                     ^~~~~~
+c:\mingw\include\string.h:227:42: error: unknown type name 'size_t'
+ __CRT_ALIAS int strerror_s (char *__buf, size_t __len, int __err)
+                                          ^~~~~~
+
+16:26:40 Build Failed. 83 errors, 0 warnings. (took 222ms)
+

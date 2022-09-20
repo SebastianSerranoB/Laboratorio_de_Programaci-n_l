@@ -1,0 +1,25 @@
+16:25:48 **** Rebuild of configuration Debug for project Probando ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Probando.o" "..\\src\\Probando.c" 
+..\src\Probando.c:15:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(void)
+      ^~~~
+..\src\Probando.c: In function 'main':
+..\src\Probando.c:20:13: error: unknown type name 'sAlbum'
+  int listar(sAlbum albumes[], int lenghtAlbumes, sArtista artistas[], sTipoArtista tipoArtistas[], sDiscografica discograficas[], sPais paises[])
+             ^~~~~~
+..\src\Probando.c:20:50: error: unknown type name 'sArtista'
+  int listar(sAlbum albumes[], int lenghtAlbumes, sArtista artistas[], sTipoArtista tipoArtistas[], sDiscografica discograficas[], sPais paises[])
+                                                  ^~~~~~~~
+..\src\Probando.c:20:71: error: unknown type name 'sTipoArtista'
+  int listar(sAlbum albumes[], int lenghtAlbumes, sArtista artistas[], sTipoArtista tipoArtistas[], sDiscografica discograficas[], sPais paises[])
+                                                                       ^~~~~~~~~~~~
+..\src\Probando.c:20:100: error: unknown type name 'sDiscografica'
+  int listar(sAlbum albumes[], int lenghtAlbumes, sArtista artistas[], sTipoArtista tipoArtistas[], sDiscografica discograficas[], sPais paises[])
+                                                                                                    ^~~~~~~~~~~~~
+..\src\Probando.c:20:131: error: unknown type name 'sPais'
+  int listar(sAlbum albumes[], int lenghtAlbumes, sArtista artistas[], sTipoArtista tipoArtistas[], sDiscografica discograficas[], sPais paises[])
+                                                                                                                                   ^~~~~
+
+16:25:49 Build Failed. 5 errors, 1 warnings. (took 225ms)
+

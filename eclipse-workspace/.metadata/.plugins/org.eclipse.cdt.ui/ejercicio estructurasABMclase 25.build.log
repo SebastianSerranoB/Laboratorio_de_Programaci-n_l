@@ -1,0 +1,15 @@
+16:26:02 **** Rebuild of configuration Debug for project ejercicio estructurasABMclase 25 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ticket.o" "..\\src\\ticket.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ejercicio estructurasABMclase 25.o" "..\\src\\ejercicio estructurasABMclase 25.c" 
+..\src\ejercicio estructurasABMclase 25.c: In function 'main':
+..\src\ejercicio estructurasABMclase 25.c:26:7: warning: unused variable 'opciones' [-Wunused-variable]
+  char opciones[1024], confirmar;
+       ^~~~~~~~
+..\src\ejercicio estructurasABMclase 25.c:24:17: warning: unused variable 'flag' [-Wunused-variable]
+  int i, opcion, flag;
+                 ^~~~
+gcc -o "ejercicio estructurasABMclase 25.exe" "src\\ejercicio estructurasABMclase 25.o" "src\\ticket.o" 
+
+16:26:03 Build Finished. 0 errors, 2 warnings. (took 808ms)
+

@@ -1,0 +1,14 @@
+20:32:15 **** Rebuild of configuration Debug for project practicaLinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\practicaLinkedList.o" "..\\src\\practicaLinkedList.c" 
+..\src\practicaLinkedList.c: In function 'initArrayPunteros':
+..\src\practicaLinkedList.c:124:6: warning: variable 'rtn' set but not used [-Wunused-but-set-variable]
+  int rtn;
+      ^~~
+..\src\practicaLinkedList.c:132:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -o practicaLinkedList.exe "src\\practicaLinkedList.o" 
+
+20:32:17 Build Finished. 0 errors, 2 warnings. (took 2s.81ms)
+

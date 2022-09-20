@@ -1,0 +1,41 @@
+13:59:08 **** Incremental Build of configuration Debug for project parcial_ll_labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parcial_ll_labo.o" "..\\src\\parcial_ll_labo.c" 
+..\src\parcial_ll_labo.c: In function 'main':
+..\src\parcial_ll_labo.c:31:4: warning: implicit declaration of function 'get_String' [-Wimplicit-function-declaration]
+    get_String("Archivo a abrir: ", path, 50);
+    ^~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\LinkedList.o" "..\\src\\LinkedList.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\computer.o" "..\\src\\computer.c" 
+..\src\computer.c: In function 'computer_setIdTxt':
+..\src\computer.c:155:35: warning: implicit declaration of function 'esNumerica' [-Wimplicit-function-declaration]
+  if(this != NULL && id != NULL && esNumerica(id))
+                                   ^~~~~~~~~~
+..\src\computer.c: In function 'computer_setPrecioTxt':
+..\src\computer.c:177:39: warning: implicit declaration of function 'esFlotante' [-Wimplicit-function-declaration]
+  if(this != NULL && precio != NULL && esFlotante(precio))
+                                       ^~~~~~~~~~
+..\src\computer.c: In function 'computer_menuInt':
+..\src\computer.c:260:2: warning: implicit declaration of function 'get_Entero' [-Wimplicit-function-declaration]
+  get_Entero("Opción: ", &opcion);
+  ^~~~~~~~~~
+..\src\computer.c:261:2: warning: implicit declaration of function 'validarEnterosMaxMin' [-Wimplicit-function-declaration]
+  validarEnterosMaxMin("Ingrese una opción válida", &opcion, min, max);
+  ^~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gets.o" "..\\src\\gets.c" 
+..\src\gets.c: In function 'get_Nombre':
+..\src\gets.c:53:16: warning: implicit declaration of function 'esValidoDescripcion' [-Wimplicit-function-declaration]
+    respuesta = esValidoDescripcion(auxiliar, tamanio);
+                ^~~~~~~~~~~~~~~~~~~
+..\src\gets.c: In function 'get_Entero':
+..\src\gets.c:71:20: warning: implicit declaration of function 'esNumerica' [-Wimplicit-function-declaration]
+   numeroValidado = esNumerica(auxiliar);
+                    ^~~~~~~~~~
+..\src\gets.c: In function 'get_Float':
+..\src\gets.c:120:22: warning: implicit declaration of function 'esFlotante' [-Wimplicit-function-declaration]
+   flotanteValidado = esFlotante(auxiliar);
+                      ^~~~~~~~~~
+gcc -o parcial_ll_labo.exe "src\\LinkedList.o" "src\\computer.o" "src\\gets.o" "src\\parcial_ll_labo.o" 
+
+13:59:11 Build Finished. 0 errors, 8 warnings. (took 2s.384ms)
+

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;notas.txt/src/notas.txt.c&apos; to &apos;notas.txt&apos;" description="Rename resource &apos;notas.txt.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/notas.txt.c" name="notas.txt" stamp="1659467446193" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;notas.txt/src/notas.txt&apos; to &apos;MAP(), notas.txt&apos;" description="Rename resource &apos;notas.txt&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/notas.txt" name="MAP(), notas.txt" stamp="1659467495455" updateReferences="true"/>
+</session>

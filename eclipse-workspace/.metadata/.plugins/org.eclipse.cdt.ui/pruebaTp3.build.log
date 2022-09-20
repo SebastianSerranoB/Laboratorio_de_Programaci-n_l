@@ -1,0 +1,50 @@
+16:32:41 **** Incremental Build of configuration Debug for project pruebaTp3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+..\parser.c: In function 'parser_PassengerFromText':
+..\parser.c:26:21: warning: format '%[^,' expects argument of type 'char *', but argument 3 has type 'int' [-Wformat=]
+   fscanf(pFile, "%[^,],%[^,],%[^,],%[^\n]\n", id, name, lastName,isEmpty);
+                     ^
+..\parser.c:26:39: warning: format '%[^
+   ' expects argument of type 'char *', but argument 6 has type 'int' [-Wformat=]
+   fscanf(pFile, "%[^,],%[^,],%[^,],%[^\n]\n", id, name, lastName,isEmpty);
+                                       ^
+..\parser.c:31:29: warning: format '%[^,' expects argument of type 'char *', but argument 3 has type 'int' [-Wformat=]
+           fscanf(pFile, "%[^,],%[^,],%[^,],%[^\n]\n", id, name, lastName,isEmpty);
+                             ^
+..\parser.c:31:47: warning: format '%[^
+   ' expects argument of type 'char *', but argument 6 has type 'int' [-Wformat=]
+           fscanf(pFile, "%[^,],%[^,],%[^,],%[^\n]\n", id, name, lastName,isEmpty);
+                                               ^
+..\parser.c:33:36: warning: implicit declaration of function 'persona_new' [-Wimplicit-function-declaration]
+           pArrayListPassenger[i] = persona_new();
+                                    ^~~~~~~~~~~
+..\parser.c:33:34: error: incompatible types when assigning to type 'LinkedList {aka struct LinkedList}' from type 'int'
+           pArrayListPassenger[i] = persona_new();
+                                  ^
+..\parser.c:34:11: warning: implicit declaration of function 'persona_setId' [-Wimplicit-function-declaration]
+           persona_setId(pArrayListPassenger[i], atoi(id)); //atol atof
+           ^~~~~~~~~~~~~
+..\parser.c:34:54: warning: passing argument 1 of 'atoi' makes pointer from integer without a cast [-Wint-conversion]
+           persona_setId(pArrayListPassenger[i], atoi(id)); //atol atof
+                                                      ^~
+In file included from ..\parser.c:2:0:
+c:\mingw\include\stdlib.h:335:38: note: expected 'const char *' but argument is of type 'int'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int atoi (const char *);
+                                      ^~~~
+..\parser.c:35:11: warning: implicit declaration of function 'persona_setName' [-Wimplicit-function-declaration]
+           persona_setName(pArrayListPassenger[i],name);
+           ^~~~~~~~~~~~~~~
+..\parser.c:36:11: warning: implicit declaration of function 'persona_setLastName' [-Wimplicit-function-declaration]
+           persona_setLastName(pArrayListPassenger[i],lastName);
+           ^~~~~~~~~~~~~~~~~~~
+..\parser.c:38:14: warning: implicit declaration of function 'strcmp' [-Wimplicit-function-declaration]
+           if(strcmp(isEmpty,"true") == 0)
+              ^~~~~~
+..\parser.c:39:15: warning: implicit declaration of function 'persona_setIsEmpty' [-Wimplicit-function-declaration]
+               persona_setIsEmpty(pArrayListPassenger[i],1);
+               ^~~~~~~~~~~~~~~~~~
+
+16:32:42 Build Failed. 1 errors, 11 warnings. (took 942ms)
+

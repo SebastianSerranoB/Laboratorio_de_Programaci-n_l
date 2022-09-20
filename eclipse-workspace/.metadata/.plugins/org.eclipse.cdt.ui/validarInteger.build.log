@@ -1,0 +1,11 @@
+16:26:47 **** Rebuild of configuration Debug for project validarInteger ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\validarInteger.o" "..\\src\\validarInteger.c" 
+..\src\validarInteger.c: In function 'main':
+..\src\validarInteger.c:14:7: warning: unused variable 'nombre' [-Wunused-variable]
+  char nombre [20];
+       ^~~~~~
+gcc -o validarInteger.exe "src\\validarInteger.o" 
+
+16:26:47 Build Finished. 0 errors, 1 warnings. (took 597ms)
+

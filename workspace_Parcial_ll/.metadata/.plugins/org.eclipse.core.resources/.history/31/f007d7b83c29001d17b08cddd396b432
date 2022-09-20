@@ -1,0 +1,44 @@
+/*
+ * controller.c
+ *
+ *  Created on: 31 ago 2022
+ *      Author: admin
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+
+#include "LinkedList.h"
+#include "Pokemon.h"
+#include "controller.h"
+#include "alumno.h"
+
+
+int controller_loadFromText(char* path , LinkedList* pArrayListPokemon)
+{
+	int retorno = -1;
+
+	FILE* pArchivo = NULL;
+
+	if(pArrayListPokemon != NULL && path != NULL)
+	{
+		pArchivo = fopen(path,"r");
+
+		if(pArchivo != NULL)
+		{
+			parser_FromText(pArchivo, pArrayListPokemon);
+			printf("\nCarga exitosa\n");
+			retorno = 0;
+		}
+		else
+		{
+			printf("\nError con la carga\n");
+		}
+
+		fclose(pArchivo);
+	}
+
+	return retorno;
+}

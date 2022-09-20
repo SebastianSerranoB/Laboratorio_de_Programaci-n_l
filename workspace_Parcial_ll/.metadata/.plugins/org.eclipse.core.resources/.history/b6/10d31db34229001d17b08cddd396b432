@@ -1,0 +1,55 @@
+/*
+ ============================================================================
+ filename:FINAL_LABORATORIO_l.c
+
+ ALUMNO: SEBASTIAN SERRANO BELLOSO           DNI: 42.810.404
+ FINAL 31/08 LABORATORIO DE PROGRAMACION l, UTN-FRA
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+
+#include "LinkedList.h"
+#include "Pokemon.h"
+#include "controller.h"
+#include "alumno.h"
+#include "parser.h"
+
+
+
+int main(void)
+{
+	setbuf(stdout, NULL);
+	LinkedList* listaPokemones;
+	int opcionMenu;
+	listaPokemones = ll_newLinkedList();
+
+
+
+	do{
+		opcionMenu = printMenu(1, 10, "\n1-cargar archivo pokemones\n2-Ordenar lista\n3-Imprimir lista por consola\n4- filtrar lista participantes\n5- Generar archivo csv, lista filtrada\n10- Salir");
+		switch(opcionMenu)
+		{
+		case 1:
+			controller_loadFromText(path, listaEntidad);
+
+
+			break;
+
+		case 10:
+			printf("\nHa salido del menu principal..");
+			break;
+
+		}
+	}while(opcionMenu != 10);
+
+
+
+
+
+
+	return EXIT_SUCCESS;
+}

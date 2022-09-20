@@ -1,0 +1,21 @@
+16:26:38 **** Rebuild of configuration Debug for project pruebasTP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pruebasTP2.o" "..\\src\\pruebasTP2.c" 
+..\src\pruebasTP2.c:15:27: error: unknown type name 'leng'
+ char getName(char name[], leng);
+                           ^~~~
+..\src\pruebasTP2.c:24:20: error: unknown type name 'sPassenger'
+ int getIdPassenger(sPassenger passengerList[], int passengerLen, Sflight flightList[], int flightLen)
+                    ^~~~~~~~~~
+..\src\pruebasTP2.c:24:66: error: unknown type name 'Sflight'
+ int getIdPassenger(sPassenger passengerList[], int passengerLen, Sflight flightList[], int flightLen)
+                                                                  ^~~~~~~
+..\src\pruebasTP2.c:42:11: error: unknown type name 'sPassenger'
+ char isId(sPassenger passenger, sFlight list, int len, char text[])
+           ^~~~~~~~~~
+..\src\pruebasTP2.c:42:33: error: unknown type name 'sFlight'
+ char isId(sPassenger passenger, sFlight list, int len, char text[])
+                                 ^~~~~~~
+
+16:26:38 Build Failed. 5 errors, 0 warnings. (took 228ms)
+

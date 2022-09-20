@@ -1,0 +1,9 @@
+08:23:12 **** Rebuild of configuration Debug for project parcialBorrador3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parcialABM.o" "..\\src\\parcialABM.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parcialBorrador.o" "..\\src\\parcialBorrador.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\getters.o" "..\\src\\getters.c" 
+gcc -o parcialBorrador3.exe "src\\getters.o" "src\\parcialABM.o" "src\\parcialBorrador.o" 
+
+08:23:13 Build Finished. 0 errors, 0 warnings. (took 956ms)
+

@@ -1,0 +1,9 @@
+16:25:38 **** Rebuild of configuration Debug for project PARCIAL_I_RECUPERATORIOprueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Entidades.o" "..\\src\\Entidades.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones_Get.o" "..\\src\\Funciones_Get.c" 
+gcc -o PARCIAL_I_RECUPERATORIOprueba.exe "src\\Entidades.o" "src\\Funciones_Get.o" "src\\Main.o" 
+
+16:25:39 Build Finished. 0 errors, 0 warnings. (took 1s.216ms)
+

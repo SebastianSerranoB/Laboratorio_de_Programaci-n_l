@@ -1,0 +1,10 @@
+16:25:55 **** Rebuild of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\printFunctions.o" "..\\src\\printFunctions.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\arithmeticCalculus.o" "..\\src\\arithmeticCalculus.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\getterFunctions.o" "..\\src\\getterFunctions.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\arithmeticCalculus.o" "src\\getterFunctions.o" "src\\printFunctions.o" 
+
+16:25:57 Build Finished. 0 errors, 0 warnings. (took 1s.536ms)
+

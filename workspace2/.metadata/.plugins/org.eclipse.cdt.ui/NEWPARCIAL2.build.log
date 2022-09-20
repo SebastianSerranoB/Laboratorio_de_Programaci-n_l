@@ -1,0 +1,9 @@
+15:49:54 **** Incremental Build of configuration Debug for project NEWPARCIAL2 ****
+Info: Internal Builder is used for build
+gcc -o NEWPARCIAL2.exe "src\\Controller.o" "src\\Entidades.o" "src\\FuncionesAlumno.o" "src\\LinkedList.o" "src\\PARCIAL_ll_BORRADOR.0.o" "src\\Parser.o" 
+src\Controller.o: In function `controller_mapList':
+C:\Users\admin\workspace2\NEWPARCIAL2\Debug/../src/Controller.c:146: undefined reference to `Empleado_Aumento'
+collect2.exe: error: ld returned 1 exit status
+
+15:49:54 Build Failed. 1 errors, 0 warnings. (took 274ms)
+

@@ -1,0 +1,8 @@
+16:26:31 **** Rebuild of configuration Debug for project notasABMestructuras ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\alumnos.o" "..\\src\\alumnos.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\notasABMestructuras.o" "..\\src\\notasABMestructuras.c" 
+gcc -o notasABMestructuras.exe "src\\alumnos.o" "src\\notasABMestructuras.o" 
+
+16:26:32 Build Finished. 0 errors, 0 warnings. (took 811ms)
+

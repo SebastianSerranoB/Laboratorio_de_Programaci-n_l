@@ -1,0 +1,14 @@
+16:26:27 **** Rebuild of configuration Debug for project inicializarVector ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\inicializarVector.o" "..\\src\\inicializarVector.c" 
+..\src\inicializarVector.c: In function 'main':
+..\src\inicializarVector.c:56:6: warning: unused variable 'vec' [-Wunused-variable]
+  int vec[CANT];
+      ^~~
+..\src\inicializarVector.c:55:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+gcc -o inicializarVector.exe "src\\inicializarVector.o" 
+
+16:26:27 Build Finished. 0 errors, 2 warnings. (took 489ms)
+

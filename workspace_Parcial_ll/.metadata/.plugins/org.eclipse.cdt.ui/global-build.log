@@ -1,0 +1,203 @@
+12:49:58 **** Incremental Build of configuration Debug for project FINAL_LABORATORIO_l ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FINAL_LABORATORIO_l.o" "..\\src\\FINAL_LABORATORIO_l.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -o FINAL_LABORATORIO_l.exe "src\\FINAL_LABORATORIO_l.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\alumno.o" "src\\controller.o" "src\\parser.o" 
+Info: Nothing to build for FINAL_LABORATORIO_l
+12:51:56 **** Incremental Build of configuration Debug for project FINAL_LABORATORIO_l ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+gcc -o FINAL_LABORATORIO_l.exe "src\\FINAL_LABORATORIO_l.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\alumno.o" "src\\controller.o" "src\\parser.o" 
+Info: Nothing to build for FINAL_LABORATORIO_l
+12:53:58 **** Incremental Build of configuration Debug for project FINAL_LABORATORIO_l ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FINAL_LABORATORIO_l.o" "..\\src\\FINAL_LABORATORIO_l.c" 
+gcc -o FINAL_LABORATORIO_l.exe "src\\FINAL_LABORATORIO_l.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\alumno.o" "src\\controller.o" "src\\parser.o" 
+12:54:40 **** Incremental Build of configuration Debug for project FINAL_LABORATORIO_l ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+gcc -o FINAL_LABORATORIO_l.exe "src\\FINAL_LABORATORIO_l.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\alumno.o" "src\\controller.o" "src\\parser.o" 
+12:55:03 **** Incremental Build of configuration Debug for project FINAL_LABORATORIO_l ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+gcc -o FINAL_LABORATORIO_l.exe "src\\FINAL_LABORATORIO_l.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\alumno.o" "src\\controller.o" "src\\parser.o" 
+Info: Nothing to build for FINAL_LABORATORIO_l
+12:56:25 **** Incremental Build of configuration Debug for project FINAL_LABORATORIO_l ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FINAL_LABORATORIO_l.o" "..\\src\\FINAL_LABORATORIO_l.c" 
+gcc -o FINAL_LABORATORIO_l.exe "src\\FINAL_LABORATORIO_l.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\alumno.o" "src\\controller.o" "src\\parser.o" 
+Info: Nothing to build for FINAL_LABORATORIO_l
+12:56:37 **** Incremental Build of configuration Debug for project FINAL_LABORATORIO_l ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FINAL_LABORATORIO_l.o" "..\\src\\FINAL_LABORATORIO_l.c" 
+gcc -o FINAL_LABORATORIO_l.exe "src\\FINAL_LABORATORIO_l.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\alumno.o" "src\\controller.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file FINAL_LABORATORIO_l.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+12:56:38 **** Incremental Build of configuration Debug for project FINAL_LABORATORIO_l ****
+Info: Internal Builder is used for build
+gcc -o FINAL_LABORATORIO_l.exe "src\\FINAL_LABORATORIO_l.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\alumno.o" "src\\controller.o" "src\\parser.o" 
+12:56:47 **** Incremental Build of configuration Debug for project FINAL_LABORATORIO_l ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FINAL_LABORATORIO_l.o" "..\\src\\FINAL_LABORATORIO_l.c" 
+gcc -o FINAL_LABORATORIO_l.exe "src\\FINAL_LABORATORIO_l.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\alumno.o" "src\\controller.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file FINAL_LABORATORIO_l.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+12:56:48 **** Incremental Build of configuration Debug for project FINAL_LABORATORIO_l ****
+Info: Internal Builder is used for build
+gcc -o FINAL_LABORATORIO_l.exe "src\\FINAL_LABORATORIO_l.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\alumno.o" "src\\controller.o" "src\\parser.o" 
+12:56:57 **** Incremental Build of configuration Debug for project FINAL_LABORATORIO_l ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FINAL_LABORATORIO_l.o" "..\\src\\FINAL_LABORATORIO_l.c" 
+gcc -o FINAL_LABORATORIO_l.exe "src\\FINAL_LABORATORIO_l.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\alumno.o" "src\\controller.o" "src\\parser.o" 
+Info: Nothing to build for FINAL_LABORATORIO_l
+13:19:36 **** Incremental Build of configuration Debug for project FINAL_LABORATORIO_l ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\alumno.o" "..\\src\\alumno.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+..\src\Pokemon.c: In function 'Pokemon_filtrarPokemonAguaVarioColor':
+..\src\Pokemon.c:369:32: warning: comparison with string literal results in unspecified behavior [-Waddress]
+   if(esVarioColor == 1 && tipo == "Water")
+                                ^~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FINAL_LABORATORIO_l.o" "..\\src\\FINAL_LABORATORIO_l.c" 
+..\src\FINAL_LABORATORIO_l.c: In function 'main':
+..\src\FINAL_LABORATORIO_l.c:57:4: warning: implicit declaration of function 'controller_list' [-Wimplicit-function-declaration]
+    controller_list(listaPokemonAguaVarioColor);
+    ^~~~~~~~~~~~~~~
+gcc -o FINAL_LABORATORIO_l.exe "src\\FINAL_LABORATORIO_l.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\alumno.o" "src\\controller.o" "src\\parser.o" 
+src\FINAL_LABORATORIO_l.o: In function `main':
+C:\Users\admin\workspace_Parcial_ll\FINAL_LABORATORIO_l\Debug/../src/FINAL_LABORATORIO_l.c:57: undefined reference to `controller_list'
+collect2.exe: error: ld returned 1 exit status
+13:22:17 **** Incremental Build of configuration Debug for project FINAL_LABORATORIO_l ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+..\src\Pokemon.c: In function 'Pokemon_filtrarPokemonAguaVarioColor':
+..\src\Pokemon.c:369:40: error: 'Water' undeclared (first use in this function)
+   if(esVarioColor == 1 && stricmp(tipo,Water) == 0)
+                                        ^~~~~
+..\src\Pokemon.c:369:40: note: each undeclared identifier is reported only once for each function it appears in
+13:22:26 **** Incremental Build of configuration Debug for project FINAL_LABORATORIO_l ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+gcc -o FINAL_LABORATORIO_l.exe "src\\FINAL_LABORATORIO_l.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\alumno.o" "src\\controller.o" "src\\parser.o" 
+src\FINAL_LABORATORIO_l.o: In function `main':
+C:\Users\admin\workspace_Parcial_ll\FINAL_LABORATORIO_l\Debug/../src/FINAL_LABORATORIO_l.c:57: undefined reference to `controller_list'
+collect2.exe: error: ld returned 1 exit status
+13:22:30 **** Incremental Build of configuration Debug for project FINAL_LABORATORIO_l ****
+Info: Internal Builder is used for build
+gcc -o FINAL_LABORATORIO_l.exe "src\\FINAL_LABORATORIO_l.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\alumno.o" "src\\controller.o" "src\\parser.o" 
+src\FINAL_LABORATORIO_l.o: In function `main':
+C:\Users\admin\workspace_Parcial_ll\FINAL_LABORATORIO_l\Debug/../src/FINAL_LABORATORIO_l.c:57: undefined reference to `controller_list'
+collect2.exe: error: ld returned 1 exit status
+13:22:55 **** Incremental Build of configuration Debug for project FINAL_LABORATORIO_l ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FINAL_LABORATORIO_l.o" "..\\src\\FINAL_LABORATORIO_l.c" 
+gcc -o FINAL_LABORATORIO_l.exe "src\\FINAL_LABORATORIO_l.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\alumno.o" "src\\controller.o" "src\\parser.o" 
+Info: Nothing to build for FINAL_LABORATORIO_l
+Info: Nothing to build for FINAL_LABORATORIO_l
+13:27:07 **** Incremental Build of configuration Debug for project FINAL_LABORATORIO_l ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FINAL_LABORATORIO_l.o" "..\\src\\FINAL_LABORATORIO_l.c" 
+gcc -o FINAL_LABORATORIO_l.exe "src\\FINAL_LABORATORIO_l.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\alumno.o" "src\\controller.o" "src\\parser.o" 
+Info: Nothing to build for FINAL_LABORATORIO_l
+13:28:41 **** Incremental Build of configuration Debug for project FINAL_LABORATORIO_l ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FINAL_LABORATORIO_l.o" "..\\src\\FINAL_LABORATORIO_l.c" 
+gcc -o FINAL_LABORATORIO_l.exe "src\\FINAL_LABORATORIO_l.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\alumno.o" "src\\controller.o" "src\\parser.o" 
+Info: Nothing to build for FINAL_LABORATORIO_l
+13:49:12 **** Incremental Build of configuration Debug for project FINAL_LABORATORIO_l ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\alumno.o" "..\\src\\alumno.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FINAL_LABORATORIO_l.o" "..\\src\\FINAL_LABORATORIO_l.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+gcc -o FINAL_LABORATORIO_l.exe "src\\FINAL_LABORATORIO_l.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\alumno.o" "src\\controller.o" "src\\parser.o" 
+Info: Nothing to build for FINAL_LABORATORIO_l
+13:50:51 **** Incremental Build of configuration Debug for project FINAL_LABORATORIO_l ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FINAL_LABORATORIO_l.o" "..\\src\\FINAL_LABORATORIO_l.c" 
+gcc -o FINAL_LABORATORIO_l.exe "src\\FINAL_LABORATORIO_l.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\alumno.o" "src\\controller.o" "src\\parser.o" 
+Info: Nothing to build for FINAL_LABORATORIO_l
+14:14:41 **** Incremental Build of configuration Debug for project FINAL_LABORATORIO_l ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+..\src\Pokemon.c: In function 'pokemon_valorDelAtaque':
+..\src\Pokemon.c:424:4: warning: implicit declaration of function 'pokemon_getTipo' [-Wimplicit-function-declaration]
+    pokemon_getTipo(pokemonUno, tipo1);
+    ^~~~~~~~~~~~~~~
+..\src\Pokemon.c:428:5: warning: implicit declaration of function 'pokemon_getValorAtaque' [-Wimplicit-function-declaration]
+     pokemon_getValorAtaque(pokemonUno, &valorAtaque);
+     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Pokemon.c:430:5: warning: implicit declaration of function 'pokemon_setValorAtaque' [-Wimplicit-function-declaration]
+     pokemon_setValorAtaque(pokemonUno, valorAtaque);
+     ^~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FINAL_LABORATORIO_l.o" "..\\src\\FINAL_LABORATORIO_l.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\alumno.o" "..\\src\\alumno.c" 
+gcc -o FINAL_LABORATORIO_l.exe "src\\FINAL_LABORATORIO_l.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\alumno.o" "src\\controller.o" "src\\parser.o" 
+src\Pokemon.o: In function `pokemon_valorDelAtaque':
+C:\Users\admin\workspace_Parcial_ll\FINAL_LABORATORIO_l\Debug/../src/Pokemon.c:424: undefined reference to `pokemon_getTipo'
+C:\Users\admin\workspace_Parcial_ll\FINAL_LABORATORIO_l\Debug/../src/Pokemon.c:428: undefined reference to `pokemon_getValorAtaque'
+C:\Users\admin\workspace_Parcial_ll\FINAL_LABORATORIO_l\Debug/../src/Pokemon.c:430: undefined reference to `pokemon_setValorAtaque'
+C:\Users\admin\workspace_Parcial_ll\FINAL_LABORATORIO_l\Debug/../src/Pokemon.c:437: undefined reference to `pokemon_getValorAtaque'
+C:\Users\admin\workspace_Parcial_ll\FINAL_LABORATORIO_l\Debug/../src/Pokemon.c:439: undefined reference to `pokemon_setValorAtaque'
+C:\Users\admin\workspace_Parcial_ll\FINAL_LABORATORIO_l\Debug/../src/Pokemon.c:446: undefined reference to `pokemon_getValorAtaque'
+C:\Users\admin\workspace_Parcial_ll\FINAL_LABORATORIO_l\Debug/../src/Pokemon.c:448: undefined reference to `pokemon_setValorAtaque'
+collect2.exe: error: ld returned 1 exit status
+14:15:01 **** Incremental Build of configuration Debug for project FINAL_LABORATORIO_l ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+gcc -o FINAL_LABORATORIO_l.exe "src\\FINAL_LABORATORIO_l.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\alumno.o" "src\\controller.o" "src\\parser.o" 
+Info: Nothing to build for FINAL_LABORATORIO_l
+Info: Nothing to build for FINAL_LABORATORIO_l
+14:17:12 **** Incremental Build of configuration Debug for project FINAL_LABORATORIO_l ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FINAL_LABORATORIO_l.o" "..\\src\\FINAL_LABORATORIO_l.c" 
+gcc -o FINAL_LABORATORIO_l.exe "src\\FINAL_LABORATORIO_l.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\alumno.o" "src\\controller.o" "src\\parser.o" 
+Info: Nothing to build for FINAL_LABORATORIO_l
+14:43:55 **** Incremental Build of configuration Debug for project FINAL_LABORATORIO_l ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FINAL_LABORATORIO_l.o" "..\\src\\FINAL_LABORATORIO_l.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\alumno.o" "..\\src\\alumno.c" 
+..\src\alumno.c: In function 'batallaPokemon':
+..\src\alumno.c:58:39: warning: the address of 'stricmp' will always evaluate as 'true' [-Waddress]
+      && stricmp(auxTamanio,"XL") == 0 && && stricmp(auxAtaqueCargado,"Lanzallamas") == 0)
+                                       ^~
+..\src\alumno.c:58:52: error: expected ')' before '(' token
+      && stricmp(auxTamanio,"XL") == 0 && && stricmp(auxAtaqueCargado,"Lanzallamas") == 0)
+                                                    ^
+..\src\alumno.c:63:39: warning: the address of 'stricmp' will always evaluate as 'true' [-Waddress]
+       && stricmp(auxTamanio,"L") == 0 && && stricmp(auxAtaqueCargado,"Hidrobomba") == 0)
+                                       ^~
+..\src\alumno.c:63:52: error: expected ')' before '(' token
+       && stricmp(auxTamanio,"L") == 0 && && stricmp(auxAtaqueCargado,"Hidrobomba") == 0)
+                                                    ^
+..\src\alumno.c:63:7: error: label 'stricmp' used but not defined
+       && stricmp(auxTamanio,"L") == 0 && && stricmp(auxAtaqueCargado,"Hidrobomba") == 0)
+       ^~
+14:44:31 **** Incremental Build of configuration Debug for project FINAL_LABORATORIO_l ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\alumno.o" "..\\src\\alumno.c" 
+gcc -o FINAL_LABORATORIO_l.exe "src\\FINAL_LABORATORIO_l.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\alumno.o" "src\\controller.o" "src\\parser.o" 
+Info: Nothing to build for FINAL_LABORATORIO_l
+14:45:08 **** Incremental Build of configuration Debug for project FINAL_LABORATORIO_l ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FINAL_LABORATORIO_l.o" "..\\src\\FINAL_LABORATORIO_l.c" 
+gcc -o FINAL_LABORATORIO_l.exe "src\\FINAL_LABORATORIO_l.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\alumno.o" "src\\controller.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file FINAL_LABORATORIO_l.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+14:45:20 **** Incremental Build of configuration Debug for project FINAL_LABORATORIO_l ****
+Info: Internal Builder is used for build
+gcc -o FINAL_LABORATORIO_l.exe "src\\FINAL_LABORATORIO_l.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\alumno.o" "src\\controller.o" "src\\parser.o" 
+Info: Nothing to build for FINAL_LABORATORIO_l
+Info: Nothing to build for FINAL_LABORATORIO_l

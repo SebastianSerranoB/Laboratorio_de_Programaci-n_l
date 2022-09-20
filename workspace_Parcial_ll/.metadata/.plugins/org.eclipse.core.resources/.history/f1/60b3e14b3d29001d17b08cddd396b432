@@ -1,0 +1,17 @@
+/*
+ * parser.c
+ *
+ *  Created on: 31 ago 2022
+ *      Author: admin
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+
+#include "LinkedList.h"
+#include "Pokemon.h"
+#include "controller.h"
+#include "alumno.h"
+#include "parser.h"

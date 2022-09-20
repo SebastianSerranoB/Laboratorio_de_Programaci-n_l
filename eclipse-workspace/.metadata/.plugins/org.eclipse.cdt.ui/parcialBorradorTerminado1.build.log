@@ -1,0 +1,11 @@
+09:36:23 **** Incremental Build of configuration Debug for project parcialBorradorTerminado1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones_Informar.o" "..\\src\\Funciones_Informar.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM.o" "..\\src\\ABM.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones_Get.o" "..\\src\\Funciones_Get.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parcialBorrador.o" "..\\src\\parcialBorrador.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones_Listar.o" "..\\src\\Funciones_Listar.c" 
+gcc -o parcialBorradorTerminado1.exe "src\\ABM.o" "src\\Entidades.o" "src\\Funciones_Calculos.o" "src\\Funciones_Get.o" "src\\Funciones_Informar.o" "src\\Funciones_Listar.o" "src\\Funciones_Ordenamiento.o" "src\\parcialBorrador.o" 
+
+09:36:24 Build Finished. 0 errors, 0 warnings. (took 1s.620ms)
+

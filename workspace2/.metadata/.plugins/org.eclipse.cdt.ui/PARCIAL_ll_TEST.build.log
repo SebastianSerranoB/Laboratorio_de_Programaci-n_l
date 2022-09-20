@@ -1,0 +1,8 @@
+13:23:27 **** Incremental Build of configuration Debug for project PARCIAL_ll_TEST ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_ll_BORRADOR.0.o" "..\\src\\PARCIAL_ll_BORRADOR.0.c" 
+gcc -o PARCIAL_ll_TEST.exe "src\\Controller.o" "src\\Entidades.o" "src\\FuncionesAlumno.o" "src\\LinkedList.o" "src\\PARCIAL_ll_BORRADOR.0.o" "src\\Parser.o" 
+
+13:23:27 Build Finished. 0 errors, 0 warnings. (took 766ms)
+

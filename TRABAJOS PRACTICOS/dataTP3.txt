@@ -1,0 +1,69 @@
+Como llevar el archivo a eclipse
+file import general- import into workspace- sino pegar carpeta en workspace manualmente
+
+primero vemos el arichivo csv(excel), 
+Tomar muy en cuenta el HEADLINE el titulo del archivo id, name , lastam etc Y TAMBIEN LAS COMAS que separan datos
+habria que sacarle todo lo que no esta escrito en ingles, acentos y eñes etc
+
+https://miniwebtool.com/es/remove-accent/ 
+pagina para eliminar acentos
+
+PASOS(NO ES OBLIGATORIO) ES UNA RECOMENDACION
+
+1-PRIMERO FUNCIONALIDAD PARA LEER EL ARCHIVO Y GUARDAR LOS DATOS DEL ARCHIVO
+lectura en binario y en texto
+primer funcion controller_loadFromText
+
+PARSER
+setters getters, constructor de list,
+LL POP NO SE USA EN ESTE TP, el pop lo saca de la lista y te lo devuelve
+
+Siguiente
+
+TIPO PASAJERO Y ESTADO VUELO LO RECIBIMOS COMO CHAR DESDE EL CSV PERO LO MANEJAMOS COMO INTEGER EN ESTRUCTURA
+UN SWITCH QUE LE ASGINE NUMERO UNICO PARA DETERMINADO ESTADO Y TIPO
+
+LA CARGA DE ARCHIVOS SE PUEDE REALIZAR UNICAMENTE UNA VEZ!! (NO IMPORTA SI ELIGE BINARIO O TEXTO PERO SOLO UNA VEZ)
+GUARDAR TODAS LAS VECES QUE QUIERA
+MANEJAMOS LA LISTA DE PASAJEROS EN ALTA, LA LISTA DE PASAJEROS EN BAJA Y UNA LISTA PARA EL ID MAXIMO, LA LLAMAMOS CUANDO DEMOS DE ALTA
+-ACORDATE QUE EL BINARIO SE GENERA UNA VEZ QUE CORRE TU PROGRAMA POR PRIMERA VEZ Y ELIGE GUARDAR EL BINARIO, EL BINARIO TE GUARDA LA ESTRUCTURA TAL CUAL COMO ES, NO NECESITAS TOCAR EL TEMA DE TIPO PASAJERO O ESTADOVUELO
+
+SI EL USUARIO DA DE ALTA PASAJEROS Y QUIERE SALIR DEL PROGRAMA SIN CARGAR LA LISTA, ADVERTIRLE CON UN MENSAJE, CARGAR LA LISTA Y GUARDAR CON LOS PASAJEROS QUE YA ESTABAN EN LA LISTA Y LOS NUEVOS
+
+
+
+typedef struct
+{
+	int id;
+	char nombre[50];
+	char apellido[50];
+	float precio;
+	int tipoPasajero;
+	char codigoVuelo[10];
+	int estadoVuelo;
+}Passenger;
+
+TIPO PASAJERO
+-FirstClass
+-ExecutiveClass
+-EconomyClass
+
+
+estado vuelo
+En Horario -  Aterrizado - En Vuelo -Demorado
+
+FLYCODES  ESTADO VUELO
+IB0800A - Aterrizado
+MM0987B  - En Horario
+TU6789B  - Aterrizado
+GU2345F  - En Vuelo
+HY4567D  - Demorado
+FR5678G  - En Horario
+BR3456J -  Demorado
+
+[1:50 a. m., 13/6/2022] +54 9 11 5884-3069: Id nombre apellido precio
+[1:50 a. m., 13/6/2022] +54 9 11 5884-3069: Y yi le mande estado de vuelo tmb
+[1:50 a. m., 13/6/2022] Sebastián B: nombre y apellido por separado
+[1:51 a. m., 13/6/2022] +54 9 11 5884-3069: Yo*
+[1:51 a. m., 13/6/2022] Sebastián B: ?
+[1:51 a. m., 13/6/2022] +54 9 11 5884-3069: Si son todos sorts de un solo criterio (esto quiere decir que se ordena por nombre y aparte por apellido como dos criterios distintos

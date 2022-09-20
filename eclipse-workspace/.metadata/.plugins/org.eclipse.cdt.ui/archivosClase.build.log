@@ -1,0 +1,7 @@
+16:25:58 **** Rebuild of configuration Debug for project archivosClase ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\archivosClase.o" "..\\src\\archivosClase.c" 
+gcc -o archivosClase.exe "src\\archivosClase.o" 
+
+16:25:58 Build Finished. 0 errors, 0 warnings. (took 493ms)
+

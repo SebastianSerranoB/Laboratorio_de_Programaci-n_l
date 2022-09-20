@@ -1,0 +1,28 @@
+/*
+ * Pokemon.h
+ *
+ *  Created on: 31 ago 2022
+ *      Author: admin
+ */
+
+#ifndef POKEMON_H_
+#define POKEMON_H_
+
+//=========== DECLARACION ENTIDAD ========== //
+typedef struct{
+
+	int numero;
+	char nombre[100];
+	char tipo[100];
+	char tamanio[50];
+	char ataqueCargado[100];
+	int valorAtaque;
+	int esVarioColor;
+}ePokemon;f
+
+
+
+
+
+
+#endif /* POKEMON_H_ */

@@ -1,0 +1,9 @@
+16:26:18 **** Rebuild of configuration Debug for project ejercicio5_2-3Anexo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menuFunctions.o" "..\\src\\menuFunctions.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ejercicio5_2-3Anexo.o" "..\\src\\ejercicio5_2-3Anexo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ejercicio5Functions.o" "..\\src\\ejercicio5Functions.c" 
+gcc -o ejercicio5_2-3Anexo.exe "src\\ejercicio5Functions.o" "src\\ejercicio5_2-3Anexo.o" "src\\menuFunctions.o" 
+
+16:26:19 Build Finished. 0 errors, 0 warnings. (took 1s.83ms)
+

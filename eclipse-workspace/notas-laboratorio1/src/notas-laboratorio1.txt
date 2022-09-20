@@ -1,0 +1,63 @@
+/*
+ ============================================================================
+ Name        : notas-laboratorio1.c
+ Author      : messirve
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
+	return EXIT_SUCCESS;
+}
+
+
+buffer hay que limpiar el "enter" del buffer,sino se ejecuta una porcion de codigo
+(enter) ojo con los espacios , espacio intermedio
+ 
+ debemos limpiar el buffer
+ 
+ setbuf(stdin, NULL); multiplataforma, windows o linux
+ fflush(stdin); solo windows   
+ caracteres o cadena de caracteres
+ 
+ mascara s de strinc
+ masca c de caracter
+ esos nos joden, vamos a tener que limpiar el buffer antes de scanf esas variables
+ 
+ &esto es un punturo, un lugar puntual en la memoria, lo vamos a ver mas adelante, hay que tener cuidado con los punteros
+ saber que scanf("%d") entre comillas porque eso es un parametro, que es un parametro? lo veremos en el proximo episodio , creo que es toda variable que se le envia a una funcion
+  string van sin "" no se bien como es
+  este tema es porque es de alto tipado
+  
+  stdout  .. hay que ver el tema con eclipse, seria limpiar la salida de datos del buffer      // en eclipse limpia la consoola
+  stdin limpia datos ingresados en el bugger
+  
+  #DEFINE TRUE 1
+  #DEFINE FALSE 0
+  Antes de las funciones se escribe
+  como c no utiliza true y false
+  el define funciona como una constante donde c va a interpretar que true vale 1 y false vale 0
+  en c 0 es falso y todo numero distinto de 0 es true, esta es una manera de hacerlo
+  el TRUE va en mayusculas por convencion, los valores constantes
+  const int identificador = valor;
+  
+  comilla doble y comilla simple es distinto
+  comilla simple es para un solo caracter y comilla doble para cadena de caracteres
+  
+  
+  PREPROCESADOR
+  se ocupa de los numerales
+  bibliotecas etc
+  el COMPILADOR
+  donde empieza la funcion
+  
+  LA DIFERENCIA ENTRE #DEFINE Y una constante es que el primero no ocupa un lugar en la memoria, el preprocesador se encarga de ofrecersela al compilador cuando se tenga que utilizarutilize el valor del define
+  en cambio una constante asigna un valor permanente en la memoria
+  se ocupa del lenguaje
+  

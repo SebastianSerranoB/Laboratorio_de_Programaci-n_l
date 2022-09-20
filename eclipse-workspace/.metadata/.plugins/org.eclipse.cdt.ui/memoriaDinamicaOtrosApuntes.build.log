@@ -1,0 +1,15 @@
+16:26:31 **** Rebuild of configuration Debug for project memoriaDinamicaOtrosApuntes ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\memoriaDinamicaOtrosApuntes.o" "..\\src\\memoriaDinamicaOtrosApuntes.c" 
+..\src\memoriaDinamicaOtrosApuntes.c: In function 'getNombre':
+..\src\memoriaDinamicaOtrosApuntes.c:195:9: warning: function returns address of local variable [-Wreturn-local-addr]
+  return auxiliar;
+         ^~~~~~~~
+..\src\memoriaDinamicaOtrosApuntes.c: In function 'getApellido':
+..\src\memoriaDinamicaOtrosApuntes.c:221:9: warning: function returns address of local variable [-Wreturn-local-addr]
+  return auxiliar;
+         ^~~~~~~~
+gcc -o memoriaDinamicaOtrosApuntes.exe "src\\memoriaDinamicaOtrosApuntes.o" 
+
+16:26:31 Build Finished. 0 errors, 2 warnings. (took 545ms)
+

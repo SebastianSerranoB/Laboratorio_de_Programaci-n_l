@@ -1,0 +1,6 @@
+PREGUNTAS
+-1) ¿Siempre que abro un archivo, debo cerrarlo dentro de la misma funcion donde la abri? por ejemplo, en 
+el controller para loadText o binary y por supuesto el parser, cargo los datos del archivo y luego lo cierro con fClose();
+-2) ¿En las funciones save(guardado) deberia primero 
+guardar el titulo del archivo, ej:fprintf("id,nombre,apellido");?
+-3)

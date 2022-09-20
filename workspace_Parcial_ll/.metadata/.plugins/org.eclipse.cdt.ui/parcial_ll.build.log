@@ -1,0 +1,46 @@
+08:03:51 **** Rebuild of configuration Debug for project parcial_ll ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\sComputer.o" "..\\src\\sComputer.c" 
+..\src\sComputer.c:20:12: error: conflicting types for 'computer_new'
+ eComputer* computer_new()
+            ^~~~~~~~~~~~
+In file included from ..\src\sComputer.c:10:0:
+..\src\sComputer.h:34:7: note: previous declaration of 'computer_new' was here
+ void* computer_new(void);
+       ^~~~~~~~~~~~
+..\src\sComputer.c: In function 'computer_newParametrosTxt':
+..\src\sComputer.c:46:25: warning: passing argument 2 of 'computer_setId' makes integer from pointer without a cast [-Wint-conversion]
+    computer_setId(this, id) != 0 ||
+                         ^~
+In file included from ..\src\sComputer.c:10:0:
+..\src\sComputer.h:108:5: note: expected 'int' but argument is of type 'char *'
+ int computer_setId(eComputer* this, int id);
+     ^~~~~~~~~~~~~~
+..\src\sComputer.c:47:30: warning: passing argument 2 of 'computer_setIdTipo' makes integer from pointer without a cast [-Wint-conversion]
+    computer_setIdTipo(this,  idTipo) != 0 ||
+                              ^~~~~~
+In file included from ..\src\sComputer.c:10:0:
+..\src\sComputer.h:132:5: note: expected 'int' but argument is of type 'char *'
+ int computer_setIdTipo(eComputer* this, int idTipo);
+     ^~~~~~~~~~~~~~~~~~
+..\src\sComputer.c:48:29: error: incompatible type for argument 2 of 'computer_setPrecio'
+    computer_setPrecio(this, precio) != 0||
+                             ^~~~~~
+In file included from ..\src\sComputer.c:10:0:
+..\src\sComputer.h:116:5: note: expected 'float' but argument is of type 'char *'
+ int computer_setPrecio(eComputer* this, float precio);
+     ^~~~~~~~~~~~~~~~~~
+..\src\sComputer.c:49:4: warning: implicit declaration of function 'computer_setCuotas' [-Wimplicit-function-declaration]
+    computer_setCuotas(this, cuotas) != 0)
+    ^~~~~~~~~~~~~~~~~~
+..\src\sComputer.c: In function 'computer_imprimirUno':
+..\src\sComputer.c:326:3: warning: implicit declaration of function 'computer_getIdTipoTxt' [-Wimplicit-function-declaration]
+   computer_getIdTipoTxt(this, bufferIdTipo, bufferTipo);
+   ^~~~~~~~~~~~~~~~~~~~~
+..\src\sComputer.c: In function 'computer_map':
+..\src\sComputer.c:388:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   nuevaLista = ll_map(listaComputadoras,computer_mapearPorCuotas);
+              ^
+
+08:03:52 Build Failed. 2 errors, 5 warnings. (took 733ms)
+

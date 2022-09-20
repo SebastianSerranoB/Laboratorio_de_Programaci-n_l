@@ -1,0 +1,7 @@
+16:26:00 **** Rebuild of configuration Debug for project clase5arraysnotas ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\clase5arraysnotas.o" "..\\src\\clase5arraysnotas.c" 
+gcc -o clase5arraysnotas.exe "src\\clase5arraysnotas.o" 
+
+16:26:01 Build Finished. 0 errors, 0 warnings. (took 500ms)
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;notas-funciones.txt/src/notas-funciones.txt.c&apos; to &apos;notas-funciones.txt&apos;" description="Rename resource &apos;notas-funciones.txt.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/notas-funciones.txt.c" name="notas-funciones.txt" stamp="1648487619257" updateReferences="true"/>
+</session>

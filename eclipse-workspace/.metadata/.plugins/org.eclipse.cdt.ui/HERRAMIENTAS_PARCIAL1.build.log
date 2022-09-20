@@ -1,0 +1,9 @@
+16:25:31 **** Rebuild of configuration Debug for project HERRAMIENTAS_PARCIAL1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\HERRAMIENTAS_PARCIAL1.o" "..\\src\\HERRAMIENTAS_PARCIAL1.c" 
+..\src\HERRAMIENTAS_PARCIAL1.c:30:31: error: unknown type name 'sEmpleados'
+ void hardcodearDatosEmpleados(sEmpleados lista[], int tam)
+                               ^~~~~~~~~~
+
+16:25:32 Build Failed. 1 errors, 0 warnings. (took 227ms)
+

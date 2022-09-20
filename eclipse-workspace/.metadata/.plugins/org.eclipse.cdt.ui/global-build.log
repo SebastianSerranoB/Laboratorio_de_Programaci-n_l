@@ -1,0 +1,8 @@
+10:00:56 **** Rebuild of configuration Debug for project PARCIAL_1_RECUPERATORIO_LISTO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones_Get.o" "..\\src\\Funciones_Get.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Entidades.o" "..\\src\\Entidades.c" 
+gcc -o PARCIAL_1_RECUPERATORIO_LISTO.exe "src\\Entidades.o" "src\\Funciones_Get.o" "src\\Main.o" 
+Info: Nothing to build for PARCIAL_1_RECUPERATORIO_LISTO
+Info: Nothing to build for PARCIAL_1_RECUPERATORIO_LISTO

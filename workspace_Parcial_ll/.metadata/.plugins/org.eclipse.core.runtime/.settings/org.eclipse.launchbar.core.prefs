@@ -1,0 +1,16 @@
+LaunchTargetManager/configs/FINAL_LABORATORIO_l.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/Parcial_ll_nuevo.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/Practica_Recuperatorio.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/RECUPERATORIO_PARCIAL_ll.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/otroparcial.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:otroparcial.exe,org.eclipse.launchbar.core.descriptorType.default\:Parcial_ll_nuevo.exe,org.eclipse.launchbar.core.descriptorType.default\:Practica_Recuperatorio.exe,org.eclipse.launchbar.core.descriptorType.default\:RECUPERATORIO_PARCIAL_ll.exe,org.eclipse.launchbar.core.descriptorType.default\:FINAL_LABORATORIO_l.exe
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:FINAL_LABORATORIO_l.exe/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:FINAL_LABORATORIO_l.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:Practica_Recuperatorio.exe/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Practica_Recuperatorio.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:otroparcial.exe/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:otroparcial.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

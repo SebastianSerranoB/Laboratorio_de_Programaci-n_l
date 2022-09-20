@@ -1,0 +1,19 @@
+16:26:35 **** Rebuild of configuration Debug for project probandoPunteros ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\probandoPunteros.o" "..\\src\\probandoPunteros.c" 
+..\src\probandoPunteros.c: In function 'main':
+..\src\probandoPunteros.c:31:5: warning: 'main' is normally a non-static function [-Wmain]
+ int main(void) {
+     ^~~~
+..\src\probandoPunteros.c: In function 'main':
+..\src\probandoPunteros.c:33:12: warning: unused variable 'miProducto' [-Wunused-variable]
+  eProducto miProducto = {1000, "Oreo", 120.31};
+            ^~~~~~~~~~
+At top level:
+..\src\probandoPunteros.c:31:5: warning: 'main' defined but not used [-Wunused-function]
+ int main(void) {
+     ^~~~
+gcc -o probandoPunteros.exe "src\\probandoPunteros.o" 
+
+16:26:36 Build Finished. 0 errors, 3 warnings. (took 546ms)
+
